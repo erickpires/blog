@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Erick Pires</title>
-    <link>http://blog.erickpires.com/post/</link>
+    <link>http://myblog.erickpires.com/post/</link>
     <description>Recent content in Posts on Erick Pires</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-BR</language>
+    <language>pt-br</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Fri, 17 Jun 2016 00:56:45 -0300</lastBuildDate>
-    <atom:link href="http://blog.erickpires.com/post/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://myblog.erickpires.com/post/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
       <title>Welcome Hugo</title>
-      <link>http://blog.erickpires.com/posts/welcome-hugo/</link>
+      <link>http://myblog.erickpires.com/posts/welcome-hugo/</link>
       <pubDate>Fri, 17 Jun 2016 00:56:45 -0300</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/welcome-hugo/</guid>
+      <guid>http://myblog.erickpires.com/posts/welcome-hugo/</guid>
       <description>&lt;p&gt;Estamos abandonando o Wordpress e migrando para Hugo.&lt;/p&gt;
 
 &lt;p&gt;Depois de diversos problemas com o meu blog hospedado no OpenShift (incluindo a perda de todas as imagens dos meus posts), finalmente resolvi migrar para um blog estaticamente gerado. Há muito tempo um amigo me apresentou o Jekyll, mas por preguiça eu mantive o Wordpress. A ideia retornou a pouco tempo, enquanto pesquisava um pouco sobre &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; ouvi falar sobre &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; e resolvi tentar. Ainda não vi muita coisa sobre ele, mas já percebi que ele incorpora o elemento que mais me agrada em Go: &amp;ldquo;simplicidade&amp;rdquo;.&lt;/p&gt;
@@ -26,15 +26,15 @@
     
     <item>
       <title>Sobre a pequenez (e a grandeza)</title>
-      <link>http://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</link>
+      <link>http://myblog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</link>
       <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</guid>
+      <guid>http://myblog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</guid>
       <description>&lt;p&gt;Há uma semana eu tive a oportunidade de fazer uma caminhada por volta das 5:40 da manhã. O céu estava começando a trocar de cor, passando lentamente do negrume da noite para um azul ainda escuro característico da manhã. Ainda era possível ver um gradiente dessas duas cores colorindo o céu. O sol iria nascer à minha direita em instantes e ao olhar nessa direção eu percebi, entre duas montanhas, um ponto muito luminoso resistindo a claridade que nossa estrela jogava naquela região. Estranhamente, o ponto parecia distante, mas próximo ao mesmo tempo; como se eu pudesse alcançá-lo se seguisse na sua direção e erguesse a mão. Lá ao longe, entre aquelas duas montanhas, “brilhava” Vênus.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/venus/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/venus/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/venus/02.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/venus/02.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Observar aquele ponto brilhante no céu logo pela manhã me trouxe alguns pensamentos e sentimentos que eu tentarei transformar em texto.&lt;/p&gt;
 
@@ -54,10 +54,10 @@
     
     <item>
       <title>Todos deveriam aprender a programar? Spoiler: Não.</title>
-      <link>http://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</link>
+      <link>http://myblog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</link>
       <pubDate>Thu, 03 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</guid>
+      <guid>http://myblog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</guid>
       <description>&lt;p&gt;Ok, essa pergunta nunca me foi feita diretamente (não que eu me lembre), mas ela já surgiu algumas vezes quando eu discuto comigo mesmo. Não exatamente essa pergunta, mas talvez a questão de como seria um mundo onde todas as pessoas sabem &amp;#8220;programar&amp;#8221;.&lt;/p&gt;
 
 &lt;p&gt;Eu prometi na página Sobre que não escreveria nada muito chato sobre computadores e farei o meu melhor para cumprir a promessa.&lt;/p&gt;
@@ -110,13 +110,13 @@
     
     <item>
       <title>LIMBO e os finais que não são finais</title>
-      <link>http://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</link>
+      <link>http://myblog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</link>
       <pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</guid>
+      <guid>http://myblog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</guid>
       <description>&lt;p&gt;Antes de começar, um aviso: eu vou escrever sobre detalhes da história de LIMBO. Então, se você for totalmente alérgico a spoilers sugiro que termine o jogo e depois volte aqui. Não acho que vou falar sobre algo que estrague o jogo, mas é melhor avisar né. De qualquer forma, o maior spoiler está no título (sorry).&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/01.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/limbo/01.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Há algum tempo (anos, talvez?) reclamaram comigo sobre o final de um livro que eu emprestei. Não lembro exatamente do diálogo, mas foi algo assim &amp;#8220;O livro é muito bom, mas ele poderia ter um final de verdade&amp;#8221;. Lembro-me de defender um pouco o ponto de vista de que aquela história não precisava de um final completamente conclusivo e tal. Pensando melhor agora, o livro termina com um Deus Ex Machina e o tempo é resetado, é realmente um final preguiçoso (ou de merda, dependendo do ponto de vista).&lt;/p&gt;
 
@@ -128,17 +128,17 @@
 
 &lt;p&gt;Há pouco tempo eu assisti &lt;a href=&#34;http://myanimelist.net/anime/20903/Harmonie&#34;&gt;Harmonie&lt;/a&gt; e &lt;a href=&#34;http://myanimelist.net/anime/12477/Sakasama_no_Patema&#34;&gt;Sakasama no Patema&lt;/a&gt;, ambos do diretor &lt;a href=&#34;http://myanimelist.net/people/6072/Yoshiura_Yasuhiro&#34;&gt;Yasuhiro Yoshiura&lt;/a&gt;. Dele também são &lt;a href=&#34;http://myanimelist.net/anime/770/Pale_Cocoon&#34;&gt;Pale Cocoon&lt;/a&gt; e &lt;a href=&#34;http://myanimelist.net/anime/7465/Eve_no_Jikan_(Movie)&#34;&gt;Eve no Jikan&lt;/a&gt; e algumas outras coisas que eu ainda não assisti. Algo interessante sobre este diretor (eu digo diretor, mas essas obras são bem autorais, muitas etapas da produção, incluindo o roteiro, são feitas por ele) é que nenhuma dessas histórias tem um final conclusivo. São histórias que se propõem a contar um período da vida de seus personagens, de desenvolve-los e fazer quem assiste se identificar com eles. Geralmente elas resolvem uma parte dos problemas envolvendo os personagens, mas terminam deixando coisas em aberto, dando a sensação de que aquilo foi só uma pequena etapa na vida daqueles personagens, que outra virá logo em seguida e permitindo a nós, espectadores, imaginarmos o que vem a seguir.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/02.jpg&#34; alt=&#34;Eve no Jikan (Time of Eve)&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/limbo/02.jpg&#34; alt=&#34;Eve no Jikan (Time of Eve)&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Não sei quanto a outras pessoas, mas sempre que eu assisto algo com esse tipo de narrativa eu fico muito tempo imaginando o que acontece depois, criando diversas formas do enredo se desenvolver e contemplando a vastidão de possibilidades. Isso proporciona uma experiência diferente para cada pessoa e é interessante pensar que aquele mundo com aqueles mesmos personagens que existe na minha imaginação é diferente para muitas outras pessoas. É, de certa forma, também uma forma de desapego do autor que cria a história para nós até determinado ponto e depois a deixa livre para crescer sozinha na nossa imaginação.&lt;/p&gt;
 
 &lt;p&gt;Na minha opinião, Harmonie é um dos animes que melhor consegue despertar essa sensação. A animação conta apenas uma etapa da vida dos personagens e quando algo ocorre e que provavelmente vai gerar mudança na vida dos personagens, a história se encerra deixando claro que aquilo foi apenas um pedaço da vida deles (&lt;em&gt;um slice of life)&lt;/em&gt;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/03.png&#34; alt=&#34;Harmonie&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/limbo/03.png&#34; alt=&#34;Harmonie&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Acho que está faltando LIMBO nesse texto, né. Quando eu me deparei com o hype de jogos indie, LIMBO foi um dos primeiros que eu ouvi falar e um dos últimos que eu resolvi comprar. Como sempre, eu demorei muito tempo para terminar esse jogo (eu sempre começo a jogar e depois paro por meses). A forma como a narrativa do jogo é mostrada, apenas com sombras e sons, mas sem diálogos, me interessou bastante. Embora os cenários sejam bem simples e a paleta de cores mais simples ainda, o jogo nos obriga a notar pequenos detalhes para conseguirmos entender mais da história.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/04.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/limbo/04.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Alguns fatos e muitas coisas curiosas nos são apresentadas, mas dar uma explicação para eles é uma tarefa quase subjetiva. O enredo e a jogabilidade se entrelaçam muito bem num excelente game design que me ajuda a justificar porque eu me interesso tanto por indies.&lt;/p&gt;
 
@@ -146,7 +146,7 @@
 
 &lt;p&gt;Sei que algumas pessoas criticam a forma como essa história é contada e o fato dela deixar tanta coisa em aberto. E essas pessoas tem razão, o jogo não nos prepara para usar a imaginação para preencher o que falta. Pensando bem, talvez o maior problema seja a duração do jogo, quando eu comecei a criar teorias sobre a história foi justamente quando ela acabou. Bem, o jogo não é perfeito e eu não esperava que fosse.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/05.jpg&#34; alt=&#34;Adorei essa imagem&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/limbo/05.jpg&#34; alt=&#34;Adorei essa imagem&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Como eu disse acima, o game design não é perfeito, mas dá para notar a quantidade de esforço que esses caras fizeram para tornar o jogo o mais próximo possível do que foi idealizado (falar com palavras já é difícil, imagine usando a linguagem desse jogo). Algo que eu gosto muito de fazer é prestar atenção à mecânica do jogo (e outros detalhes técnicos) e imaginar quanto trabalho deve ter dado para programar isso. E por tudo isso, eu gostaria de agradecer ao esforço dessas pessoas que fizeram um excelente trabalho.&lt;/p&gt;
 
@@ -156,10 +156,10 @@
     
     <item>
       <title>Relacionando Donnie Darko com Madoka Magika</title>
-      <link>http://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</link>
+      <link>http://myblog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</link>
       <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</guid>
+      <guid>http://myblog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</guid>
       <description>&lt;p&gt;Antes de começar um aviso: este post contém spoilers dos últimos minutos de  Madoka Magika e de algo que é revelado no final do episódio 8. Esses spoilers podem, e certamente irão, destruir a experiência de assistir ao anime, então se você tem planos de assisti-lo, faça isso primeiro e depois volte aqui. Como é possível deduzir pelo título, também falarei sobre Donnie Darko, mas não será um grande spoiler; ao meu ver, pelo menos. Falando sobre título, eu pensei em um outro bem interessante, mas ele seria um enorme spoiler.&lt;/p&gt;
 
 &lt;p&gt;Este final de semana eu resolvi assistir Donnie Darko pela terceira vez. É interessante como a cada vez que eu assisto a esse filme acabo percebendo algo novo e com certeza ainda há muito mais coisas para se perceber, já que eu ainda não posso dizer que entendi completamente o filme.&lt;/p&gt;
@@ -168,17 +168,17 @@
 
 &lt;p&gt;Se você chegou até aqui deve saber que as personagens de Madoka Magika são garotas mágicas e que em troca de um pedido realizado se comprometem a arriscar suas &amp;#8220;vidas&amp;#8221; enfrentando seres conhecidos como bruxas. No final do oitavo episódio é revelado que as bruxas se originam das próprias garotas mágicas. Ao final do anime vemos uma imensa Soul Gem se tornar uma Grief Seed e um pouco da sua transformação da Madoka em bruxa.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/01.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/madoka/01.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;No anime isso não é dito explicitamente, mas o nome de bruxa da Madoka é &lt;a href=&#34;http://wiki.puella-magi.net/Kriemhild_Gretchen&#34;&gt;Kriemhild Gretchen&lt;/a&gt;. Esse é um ponto que me chamou atenção, já que em Donnie Darko temos uma personagem chamada Gretchen.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/madoka/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Uma ideia da Gretchen que é citada mais de uma vez no filme é a de que se fosse possível ter uma máquina seria também possível voltar ao passado e retirar das pessoas quaisquer lembranças ruins. Sabemos que a personagem possui um trauma no passado e isso explica de onde veio essa ideia. Em outra cena Donnie e Gretchen apresentam um trabalho de ciências propondo um dispositivo cujo objetivo é permitir que os pais criem memórias &amp;#8220;boas&amp;#8221; para seus filhos. O filme deixa bem claro que memórias da infância são bem fortes.&lt;/p&gt;
 
 &lt;p&gt;Essa ideia tem o mesmo principio do pedido feito pela Madoka, estar com todas as garotas mágicas (seja do passado, presente ou futuro) e poder livra-las do sofrimento de se transformarem em bruxas. Pensando bem, morte é um assunto em comum entre Donnie Darko e Madoka Magika, e eu concordo com ambas as obras com relação à ideia de que o momento da morte não deveria ser sofrimento para qualquer pessoa.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/03.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/madoka/03.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Porém, como Madoka Magika deixa claro, ter o poder retirar as memórias de sofrimento das pessoas seria o mesmo que ter poderes de um deus (sim, com &amp;#8220;d&amp;#8221; minúsculo, não quero arrumar problemas e entrar em discussões desnecessárias). No filme de Steins; Gate é dito que é porque o tempo segue sempre em um sentido (Einstein discordaria) que o ser humano é capaz de superar acontecimentos ruins e seguir em frente. Acho que progresso é feito a partir de falhas.&lt;/p&gt;
 
@@ -190,21 +190,21 @@
 
 &lt;p&gt;Até mais.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/04.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/madoka/04.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Aventuras de Menino</title>
-      <link>http://blog.erickpires.com/posts/aventuras-de-menino/</link>
+      <link>http://myblog.erickpires.com/posts/aventuras-de-menino/</link>
       <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/aventuras-de-menino/</guid>
+      <guid>http://myblog.erickpires.com/posts/aventuras-de-menino/</guid>
       <description>&lt;p&gt;Quando a L&amp;amp;PM lançou Solanin e Aventuras de Menino aqui no Brasil eu fiquei bastante interessado em ambos os mangas, mas não comprei nenhum dos dois. Depois de um tempo eu acabei comprando Solanin, do qual eu ainda falarei aqui no blog, mas só resolvi adquirir Aventuras de Menino este mês.&lt;/p&gt;
 
 &lt;p&gt;Ultimamente tem sido um hábito meu não pesquisar muito sobre qualquer material de entretenimento que eu consumo, uma forma de garantir que a obra tenha mais chances de me surpreender. O que eu já sabia sobre a história é o que o título revela, certa nostalgia com os tempos de &amp;#8220;menino&amp;#8221;.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/aventuras_de_menino/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/aventuras_de_menino/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Antes de comentar qualquer coisa quero dizer que eu não acho que essa história deva ser lida por qualquer pessoa, é necessário um certo grau de maturidade para entender a forma de agir dos personagens, assim como conseguir compreender de onde vem essa nostalgia (ou seja, não é voltado para um público muito novo).&lt;/p&gt;
 
@@ -234,16 +234,16 @@
 
 &lt;p&gt;Obrigado por ler e até mais.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/aventuras_de_menino/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/aventuras_de_menino/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Super Hexagon e o aprendizado por repetição</title>
-      <link>http://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</link>
+      <link>http://myblog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</link>
       <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</guid>
+      <guid>http://myblog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</guid>
       <description>&lt;p&gt;Super Hexagon, para quem não conhece, é um jogo indie produzido por Terry Cavanagh em 2012 para iOS, Windows e OS X, e que ganhou lançamentos para Linux,  Android e Blackberry em 2013. Apesar disso, eu só fui conhecê-lo em meados de 2013.&lt;/p&gt;
 
 &lt;p&gt;É um jogo bastante viciante, o fato de eu ter mais de nove horas registradas pelo Steam comprova isso, mas algo em que eu fiquei pensando durante uma sessão do jogo (enquanto eu morria diversas vezes) é o motivo que me leva a &amp;#8220;perder&amp;#8221; tanto tempo com esse jogo.&lt;/p&gt;
@@ -252,7 +252,7 @@
 
 &lt;p&gt;O primeiro grande truque que se aprende é que as fases do jogo possuem padrões que se repetem e não há mais do que cinco, talvez seis, padrões por nível. O segundo truque vem da época em que eu jogava Guitar Hero, não olhar para o &amp;#8220;personagem&amp;#8221; e sim para as bordas da tela, isso ajuda a ter tempo para processar o próximo movimento, mas te obriga a jogar com visão periférica.&lt;/p&gt;
 
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/super_hexagon/super_hexagon.jpg&#34; alt=&#34;Um dos padrões encontrados no jogo.&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;http://myblog.erickpires.com/images/super_hexagon/super_hexagon.jpg&#34; alt=&#34;Um dos padrões encontrados no jogo.&#34; /&gt;&lt;/p&gt;
 
 &lt;p&gt;Outra característica do jogo é que controlar, embora seja simplesmente rodar para um dos lados, não é uma tarefa simples e a diferença entre parar no local certo ou se desviar alguns pixels e morrer está em frações de segundo a mais com o botão apertado.&lt;/p&gt;
 

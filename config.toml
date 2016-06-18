@@ -3,7 +3,7 @@ languageCode = "pt-br"
 title = "Erick Pires"
 theme = "casper"
 
-BaseUrl= "http://blog.erickpires.com/"
+BaseUrl= "http://myblog.erickpires.com/"
 LanguageCode= "pt-BR"
 Title= "Erick Pires"
 paginate = 5
