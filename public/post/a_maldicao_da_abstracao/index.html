@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  	<meta property="og:title" content=" A maldição da abstração &middot;  Erick Pires" />
+  	<meta property="og:site_name" content="Erick Pires" />
+  	<meta property="og:url" content="http://blog.erickpires.com/post/a_maldicao_da_abstracao/" />
+
+    
+  	<meta property="og:type" content="article" />
+
+    <meta property="og:article:published_time" content="2016-11-12T20:54:18-02:00" />
+
+    
+    
+
+  <title>
+     A maldição da abstração &middot;  Erick Pires
+  </title>
+
+    <meta name="description" content="" />
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="http://blog.erickpires.com/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="http://blog.erickpires.com/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="http://blog.erickpires.com/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="http://blog.erickpires.com/css/nav.css" />
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Merriweather:300,700,700italic,300italic|Open+Sans:700,400|Inconsolata" />
+
+
+    
+      
+          <link href="http://blog.erickpires.com/index.xml" rel="alternate" type="application/rss+xml" title="Erick Pires" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.16" />
+
+    <link rel="canonical" href="http://blog.erickpires.com/post/a_maldicao_da_abstracao/" />
+
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-79559042-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">Menu</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">Close</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://blog.erickpires.com/">Erick Pires</a>
+            </li>
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="http://blog.erickpires.com/about">Sobre</a>
+            </li>
+        
+    </ul>
+    
+    
+    <a class="subscribe-button icon-feed" href="http://blog.erickpires.com/index.xml">Subscribe</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+
+  
+  <header class="main-header post-head" style="background-image: url(http://blog.erickpires.com/images/a_maldicao_da_abstracao/cover.jpg)">
+  
+  <nav class="main-nav overlay clearfix">
+
+
+  
+      <a class="blog-logo" href="http://blog.erickpires.com/"><img src="http://blog.erickpires.com/images/logo.png" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">Menu</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">A maldição da abstração</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2016-11-12T20:54:18-02:00">
+            Nov 12, 2016
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>Obviamente eu escolhi o nome mais chamativo que consegui imaginar para esse post (ao melhor estilo Buzzfeed), mas um nome mais preciso seria &ldquo;Produtividade vs Entendimento&rdquo;. Antes de falar sobre o motivo que me fez escrever esse texto, quero deixar claro essa relação entre abstração e produtividade, já que isso foi algo que eu levei um tempo para entender completamente.</p>
+
+<p>Vou tomar como exemplo algo mais próximo de quem lida com computação, mas certamente o mesmo raciocínio se aplica a outras áreas. Quando alguém escreve um programa em assembly o programador tem um conhecimento enorme sobre o que o programa está fazendo, quais variáveis estão na memória e quais estão em registradores, quais registradores são usados para que, quais loops são desenrolados, quais funções sofrem inline, etc. Se o programador tivesse tempo infinito, ele poderia gerar o código de máquina mais otimizado possível para o seu programa (ok, alguém vai dizer que ele pode ficar preso em um mínimo local. Fine. Nesse caso ele chegaria muito próximo do código mais otimizado possível). É compreensível que alguns programadores não adotaram linguagens com um maior nível de abstração quando a transição para linguagens compiladas aconteceu, eles tinham muito mais controle sobre o programa em assembly. Mas nós não programamos em assembly hoje em dia. Nós criamos linguagens cada vez mais abstratas e o motivo disso, como sugerido antes, tem relação com a maior produtividade (ou seja, menor tempo para realizar um determinada tarefa) que essas linguagens proporcionam. Porém, nós abrimos mão de certa quantidade de controle para obter essa abstração, quanto menos o programador se preocupa sobre &ldquo;detalhes&rdquo; da implementação do programa, mais o compilador (ou interpretador, ou VM) tem que domar decisões por ele.</p>
+
+<p>Bem, tudo que isso foi para dizer que embora abstração nos dê certa vantagem, abstração demais pode causar problemas. Como exemplo, vamos pensar na produção de um jogo. Muitas tarefas semelhantes (como atualizar o estado de todos os objetos, simular a &ldquo;física&rdquo; para todos os objetos, submeter dados para a GPU) precisam ser executadas durante um período de tempo razoavelmente curto (<sup>1</sup>&frasl;<sub>60</sub> segundos) e em seguida o processo inteiro precisa ser refeito para preparar o próximo frame. Nesse cenário, é possível que um controle mais direto sobre, por exemplo, a alocação de memória seja necessário para garantir que os frames sejam gerados a tempo. Trabalhar com nível de abstração que não permita esse tipo de controle [insert Java hate comment here] provavelmente resultará em gambiarras pelo código e horas gastas tentando contornar essa limitação. Saber identificar o nível de abstração ideal para cada problema é uma habilidade que leva tempo para ser construída.</p>
+
+<p>Agora vamos a algo que tem me incomodado faz um tempo. O aprendizado (e obviamente o ensino) de programação com pouca abstração tem deixado bastante a desejar. O problema mais imediatamente perceptível é que isso limita os tipos de problemas que alguém consegue resolver eficientemente. Eu não discordo da ideia de iniciar o aprendizado com certo nível de abstração, já que assim a taxa de crescimento da curva de aprendizagem se torna mais suave e é mais provável que quem está aprendendo continue motivado para aprender mais. Um ótimo exemplo disso é a plataforma do Arduino onde são abstraídas as etapas de acoplar ao microcontrolador um oscilador, um conversor serial-USB, entender uma IDE complicada, entender o que é ICSP, ligar um gravador e só então poder &ldquo;ver&rdquo; o código rodando. Além disso, as bibliotecas abstraem operações típicas de microcontroladores, como escrever em um registrador para ligar um Timer por exemplo. É interessante como o Arduino torna a programação de sistemas embutidos mais acessível para todo mundo. Mas eu vejo poucas tentativas de ensinar o lado mais low-level do funcionamento de um microcontrolador, e as que eu vejo tendem a criar uma dificuldade (ao meu ver) desnecessária. O mesmo pode ser dito sobre a forma que ponteiros são ensinados em um curso C, ou sobre um curso inteiro de programação em assembly.</p>
+
+<p>Ok, talvez diminuir a abstração implique diretamente em uma maior dificuldade de aprender algo. Mas é possível que nós estejamos tentando ensinar de forma errada, e eu estou disposto a tentar responder essa questão. Mais precisamente, eu gostaria de ouvir as opiniões (e frustrações) de pessoas que notaram essa diferença brusca em dificuldade. Ideias sobre como deixar o aprendizado de conceitos low-level mais &ldquo;suave&rdquo; também são bem vindas. De qualquer forma, se você se interessar sobre o assunto por favor venha conversar comigo.</p>
+
+<p>P.S.: Eu não deixei bem claro o motivo de uma curva de aprendizado &ldquo;íngreme&rdquo; me desagradar. Ao aprender algo com essa dificuldade é muito provável que quem está aprendendo deixe passar um conceito ou outro, simplesmente porque ele não consegue acompanhar a velocidade com que está sendo exposto a coisas novas. Com alguma probabilidade não nula esse conceito pode ser um &ldquo;conceito chave&rdquo; e nesse caso a pessoa termina com &ldquo;buracos&rdquo; no seu entendimento do assunto.</p>
+
+<p>P.S.2: Eu não comentei sobre pessoas que só conseguem aprender em um estilo bottom-up, ou seja, de um estado de menor abstração em direção ao de maior abstração. O aprendizado para essas pessoas não precisa ser mais difícil do que o necessário.</p>
+
+<p>P.S.3: Essa imagem
+<img src="http://blog.erickpires.com/images/a_maldicao_da_abstracao/say-low-level-one-more-goddamn-time.jpg" alt=" " /></p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+    <figure class="author-image">
+        <a class="img" href="http://blog.erickpires.com/" style="background-image: url(http://blog.erickpires.com/images/logo.png)"><span class="hidden">Erick Pires's Picture</span></a>
+    </figure>
+    
+
+    
+
+
+
+
+
+<section class="author">
+  <h4><a href="http://blog.erickpires.com/">Erick Pires</a></h4>
+  
+  <p>Estudante de Ciência da Computação</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Rio de Janeiro, Brazil</span>
+    <span class="author-link icon-link"><a href="http://erickpires.com">http://erickpires.com</a></span>
+  </div>
+</section>
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=A%20maldi%c3%a7%c3%a3o%20da%20abstra%c3%a7%c3%a3o&amp;url=http%3a%2f%2fblog.erickpires.com%2fpost%2fa_maldicao_da_abstracao%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=http%3a%2f%2fblog.erickpires.com%2fpost%2fa_maldicao_da_abstracao%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=http%3a%2f%2fblog.erickpires.com%2fpost%2fa_maldicao_da_abstracao%2f&amp;description=A%20maldi%c3%a7%c3%a3o%20da%20abstra%c3%a7%c3%a3o"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=http%3a%2f%2fblog.erickpires.com%2fpost%2fa_maldicao_da_abstracao%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+  var disqus_shortname = 'erickpires';
+  var disqus_url = 'http:\/\/blog.erickpires.com\/post\/a_maldicao_da_abstracao\/';
+  (function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+  </footer>
+</article>
+
+</main>
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Erick Pires</a> All rights reserved - 2016</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="http://blog.erickpires.com/js/jquery.js"></script>
+    <script type="text/javascript" src="http://blog.erickpires.com/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="http://blog.erickpires.com/js/index.js"></script>
+    
+</body>
+</html>
+
