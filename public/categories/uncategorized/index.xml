@@ -2,124 +2,42 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Uncategorized on Erick Pires</title>
-    <link>http://blog.erickpires.com/categories/uncategorized/</link>
+    <link>https://blog.erickpires.com/categories/uncategorized/</link>
     <description>Recent content in Uncategorized on Erick Pires</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
+    <language>pt-BR</language>
     <copyright>All rights reserved - 2016</copyright>
     <lastBuildDate>Sun, 06 Sep 2015 00:00:00 +0000</lastBuildDate>
-    <atom:link href="http://blog.erickpires.com/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
+	<atom:link href="https://blog.erickpires.com/categories/uncategorized/index.xml" rel="self" type="application/rss+xml" />
+    
     
     <item>
       <title>Sobre a pequenez (e a grandeza)</title>
-      <link>http://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</link>
+      <link>https://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</link>
       <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</guid>
-      <description>&lt;p&gt;Há uma semana eu tive a oportunidade de fazer uma caminhada por volta das 5:40 da manhã. O céu estava começando a trocar de cor, passando lentamente do negrume da noite para um azul ainda escuro característico da manhã. Ainda era possível ver um gradiente dessas duas cores colorindo o céu. O sol iria nascer à minha direita em instantes e ao olhar nessa direção eu percebi, entre duas montanhas, um ponto muito luminoso resistindo a claridade que nossa estrela jogava naquela região. Estranhamente, o ponto parecia distante, mas próximo ao mesmo tempo; como se eu pudesse alcançá-lo se seguisse na sua direção e erguesse a mão. Lá ao longe, entre aquelas duas montanhas, “brilhava” Vênus.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/venus/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/venus/02.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Observar aquele ponto brilhante no céu logo pela manhã me trouxe alguns pensamentos e sentimentos que eu tentarei transformar em texto.&lt;/p&gt;
-
-&lt;p&gt;Nós, seres de 1,7m de altura, estamos acostumados com a ideia de que a Terra é grande; e ela de fato é, se a compararmos com nós mesmos. Vênus, nosso planeta vizinho é pouco (em escala planetária) menor que a Terra. Ver um planeta ser reduzido a um pequeno ponto brilhante no céu dá uma ideia do quão grande é o Sistema Solar. E pensar que o Sistema Solar é só um minúsculo ponto “perdido” em meio a Via Láctea e que a Via Láctea é só mais uma entre bilhões de galaxias no Universo nos dá uma ideia de quão vasto é o Universo.&lt;/p&gt;
-
-&lt;p&gt;E saber a dimensão do Universo nos permite perceber o quão pequenos e insignificantes nós somos. Para muitos essa é uma visão muito deprimente, é uma visão triste que nos tira um possível significado para a vida.  E por isso as pessoas fogem dela com bastante frequência.&lt;/p&gt;
-
-&lt;p&gt;Mas para mim a percepção dessa realidade nos ensina bastante sobre humildade. Pegue um ser humano típico, como eu ou você, e olhe para todas as realizações dessa pessoa, olhe para todo o conhecimento que essa pessoa já adquiriu e gerou, olhe também todo o mal que ele ou ela já fez a este planeta. Agora compare tudo isso a todas as realizações, conhecimento,bondade,  maldade, etc. da humanidade. Essa pessoa tem tanto significado dentro da espécie humana quanto um planeta dentro do Sistema Solar. Essa pessoa, vista de fora, é apenas um pontinho que pode até mesmo brilhar, mas que é facilmente ofuscada pelo resto do Universo.&lt;/p&gt;
-
-&lt;p&gt;Por falar em ser humano, eu gosto muito de utilizar uma das características mais fantásticas da nossa espécie, a imaginação, e fazer suposições dentro de um cenário impossível. Talvez alguém pergunte qual a utilidade disso, e eu respondo que nem tudo precisa de uma utilidade; pensar simplesmente pelo fato de pensar é algo que todos deveriam fazer. Imagine, por um momento, que Vênus tenha consciência de seu lugar no Universo, será que nosso vizinho encararia isso como algo triste, assim como nós?&lt;/p&gt;
-
-&lt;p&gt;Durante um episódio da série Cosmos, Carl Sagan é perguntado por uma garotinha se o Sol é considerado parte da Via Láctea. E ele responde “Claro. Você é parte da Via Láctea[&amp;#8230;]”. Carl Sagan tinha um ponto de vista bem romântico quanto ao nosso lugar no Universo e é esse romantismo que torna Cosmos uma série tão fascinante. Não é fácil encarar a realidade de nós somos apenas um aglomerado de moléculas complexas trabalhando juntas para “driblar” a Segunda Lei da Termodinâmica. Mas enxergar a verdade através desse viés romântico é no mínimo mais reconfortante.&lt;/p&gt;
-
-&lt;p&gt;Portanto, a conclusão de eu tiro de tudo isso é que por maior que uma pessoa pense ser, ela ainda é minúscula diante de tudo, mas mesmo assim, ela ainda faz parte de algo incrível: a humanidade. E a humanidade faz parte de algo mais incrível ainda: o Universo.&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</guid>
+      <description>Há uma semana eu tive a oportunidade de fazer uma caminhada por volta das 5:40 da manhã. O céu estava começando a trocar de cor, passando lentamente do negrume da noite para um azul ainda escuro característico da manhã. Ainda era possível ver um gradiente dessas duas cores colorindo o céu. O sol iria nascer à minha direita em instantes e ao olhar nessa direção eu percebi, entre duas montanhas, um ponto muito luminoso resistindo a claridade que nossa estrela jogava naquela região.</description>
     </item>
     
     <item>
       <title>Relacionando Donnie Darko com Madoka Magika</title>
-      <link>http://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</link>
+      <link>https://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</link>
       <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</guid>
-      <description>&lt;p&gt;Antes de começar um aviso: este post contém spoilers dos últimos minutos de  Madoka Magika e de algo que é revelado no final do episódio 8. Esses spoilers podem, e certamente irão, destruir a experiência de assistir ao anime, então se você tem planos de assisti-lo, faça isso primeiro e depois volte aqui. Como é possível deduzir pelo título, também falarei sobre Donnie Darko, mas não será um grande spoiler; ao meu ver, pelo menos. Falando sobre título, eu pensei em um outro bem interessante, mas ele seria um enorme spoiler.&lt;/p&gt;
-
-&lt;p&gt;Este final de semana eu resolvi assistir Donnie Darko pela terceira vez. É interessante como a cada vez que eu assisto a esse filme acabo percebendo algo novo e com certeza ainda há muito mais coisas para se perceber, já que eu ainda não posso dizer que entendi completamente o filme.&lt;/p&gt;
-
-&lt;p&gt;Desta vez algo na história me fez lembrar de Madoka Magika. Assistir novamente algo nos permite perceber melhor certas nuances no enredo. Vamos começar então com os spoilers.&lt;/p&gt;
-
-&lt;p&gt;Se você chegou até aqui deve saber que as personagens de Madoka Magika são garotas mágicas e que em troca de um pedido realizado se comprometem a arriscar suas &amp;#8220;vidas&amp;#8221; enfrentando seres conhecidos como bruxas. No final do oitavo episódio é revelado que as bruxas se originam das próprias garotas mágicas. Ao final do anime vemos uma imensa Soul Gem se tornar uma Grief Seed e um pouco da sua transformação da Madoka em bruxa.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/01.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;No anime isso não é dito explicitamente, mas o nome de bruxa da Madoka é &lt;a href=&#34;http://wiki.puella-magi.net/Kriemhild_Gretchen&#34;&gt;Kriemhild Gretchen&lt;/a&gt;. Esse é um ponto que me chamou atenção, já que em Donnie Darko temos uma personagem chamada Gretchen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Uma ideia da Gretchen que é citada mais de uma vez no filme é a de que se fosse possível ter uma máquina seria também possível voltar ao passado e retirar das pessoas quaisquer lembranças ruins. Sabemos que a personagem possui um trauma no passado e isso explica de onde veio essa ideia. Em outra cena Donnie e Gretchen apresentam um trabalho de ciências propondo um dispositivo cujo objetivo é permitir que os pais criem memórias &amp;#8220;boas&amp;#8221; para seus filhos. O filme deixa bem claro que memórias da infância são bem fortes.&lt;/p&gt;
-
-&lt;p&gt;Essa ideia tem o mesmo principio do pedido feito pela Madoka, estar com todas as garotas mágicas (seja do passado, presente ou futuro) e poder livra-las do sofrimento de se transformarem em bruxas. Pensando bem, morte é um assunto em comum entre Donnie Darko e Madoka Magika, e eu concordo com ambas as obras com relação à ideia de que o momento da morte não deveria ser sofrimento para qualquer pessoa.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/03.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Porém, como Madoka Magika deixa claro, ter o poder retirar as memórias de sofrimento das pessoas seria o mesmo que ter poderes de um deus (sim, com &amp;#8220;d&amp;#8221; minúsculo, não quero arrumar problemas e entrar em discussões desnecessárias). No filme de Steins; Gate é dito que é porque o tempo segue sempre em um sentido (Einstein discordaria) que o ser humano é capaz de superar acontecimentos ruins e seguir em frente. Acho que progresso é feito a partir de falhas.&lt;/p&gt;
-
-&lt;p&gt;O ser humano nunca foi muito bom em ser deus (até por isso que ele criou um em vez de se tornar um) e o poder de alterar as memórias de qualquer pessoa da história é bastante perigoso. Como a última cena que citei sobre Donnie Darko lembra, quem tem o poder que criar lembranças boas também tem o poder que criar lembranças ruins e podemos lembrar que o poder tende a corromper.&lt;/p&gt;
-
-&lt;p&gt;Portanto, caro leitor, na próxima vez que pensar: &amp;#8220;Poxa, eu queria ter uma máquina do tempo&amp;#8221;, lembre-se da responsabilidade que vem com ela e reflita um pouco sobre o uso que faria dela.&lt;/p&gt;
-
-&lt;p&gt;Eu esperava encontrar algo relacionado a essas duas obras pesquisando no Google, mas não encontrei. O que indica que se em algum lugar dessa internet houver algo falando sobre isso, deve ser em algum blog do tamanho do meu. Mas isso é assunto para outro post.&lt;/p&gt;
-
-&lt;p&gt;Até mais.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/04.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</guid>
+      <description>Antes de começar um aviso: este post contém spoilers dos últimos minutos de Madoka Magika e de algo que é revelado no final do episódio 8. Esses spoilers podem, e certamente irão, destruir a experiência de assistir ao anime, então se você tem planos de assisti-lo, faça isso primeiro e depois volte aqui. Como é possível deduzir pelo título, também falarei sobre Donnie Darko, mas não será um grande spoiler; ao meu ver, pelo menos.</description>
     </item>
     
     <item>
       <title>Aventuras de Menino</title>
-      <link>http://blog.erickpires.com/posts/aventuras-de-menino/</link>
+      <link>https://blog.erickpires.com/posts/aventuras-de-menino/</link>
       <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/aventuras-de-menino/</guid>
-      <description>&lt;p&gt;Quando a L&amp;amp;PM lançou Solanin e Aventuras de Menino aqui no Brasil eu fiquei bastante interessado em ambos os mangas, mas não comprei nenhum dos dois. Depois de um tempo eu acabei comprando Solanin, do qual eu ainda falarei aqui no blog, mas só resolvi adquirir Aventuras de Menino este mês.&lt;/p&gt;
-
-&lt;p&gt;Ultimamente tem sido um hábito meu não pesquisar muito sobre qualquer material de entretenimento que eu consumo, uma forma de garantir que a obra tenha mais chances de me surpreender. O que eu já sabia sobre a história é o que o título revela, certa nostalgia com os tempos de &amp;#8220;menino&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/aventuras_de_menino/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Antes de comentar qualquer coisa quero dizer que eu não acho que essa história deva ser lida por qualquer pessoa, é necessário um certo grau de maturidade para entender a forma de agir dos personagens, assim como conseguir compreender de onde vem essa nostalgia (ou seja, não é voltado para um público muito novo).&lt;/p&gt;
-
-&lt;p&gt;Algo que vale a pena comentar também é que não haverá grandes spoilers nesse texto (um amigo me disse que achou que encontraria um spoiler de 2001 no último post).&lt;/p&gt;
-
-&lt;p&gt;Aventuras de Menino é uma leitura bem confortável, embora as histórias tratem da vida pessoal dos personagens e de seus problemas, em momento algum ela tenta emocionar excessivamente o leitor, ou passar uma moral complicada. É claro que algumas pessoas podem se conectar com a história dos personagens e ter uma leitura mais intensa (talvez até mesmo refletir sobre como anda a sua vida pessoal).&lt;/p&gt;
-
-&lt;p&gt;O mangá é divido em contos independentes que possuem uma temática bem comum: os seus protagonistas possuem problemas não resolvidos ou se tornaram pessoas frias para suportar a vida.&lt;/p&gt;
-
-&lt;p&gt;Existe uma cobrança da nossa sociedade de que eventualmente os meninos se tornem homens. Um dia todo garoto deve parar de sonhar, criar objetivos e metas para a vida e seguir nessa direção. Ser um grande cientista e ganhar um Nobel, descobrir outros mundos, ser um músico famoso ou um grande esportista, tudo isso é &amp;#8220;coisa de criança&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;Certa vez, durante o meu primeiro ano do ensino médio, um colega de turma disse que seria um jogador de futebol para uma professora e esta respondeu: &amp;#8220;Se você ainda não foi descoberto até os quinze anos, é melhor pensar em outra coisa para fazer&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;Eu mesmo sempre fui uma pessoa que fantasia diversos acontecimentos, provavelmente eu nem conseguiria contar quantos poderes especiais eu já tive até hoje.&lt;/p&gt;
-
-&lt;p&gt;Uma boa pergunta é: &amp;#8220;Por que eu não posso mais ser um super herói?&amp;#8221; Eu não tenho mais conhecimento de que isso é impossível agora do que quando eu tinha sete anos.&lt;/p&gt;
-
-&lt;p&gt;Para os personagens do mangá essa situação é ainda pior. Todos eles precisam ser vistos como homens bem sucedidos financeiramente e possíveis chefes de família. Deles é cobrado que estejam sempre firmes como rocha. É uma sociedade em que o contraste entre o sucesso e o fracasso é tão grande que forma um abismo entre pessoas.&lt;/p&gt;
-
-&lt;p&gt;Talvez seja por isso que nossos avôs costumam ter o hábito de contar histórias sobre os tempos de juventude. Minha avó certa vez me disse que depois que a pessoa fica velha ela volta a ser criança. É reconfortante lembrar da época em que não havia a todo momento, cobranças sobre como agir ou como tratar situações e até mesmo pessoas. (Já me disseram &amp;#8220;Você tem que falar mais com as pessoas&amp;#8221;. Nem anti-social eu tenho o direito de ser).&lt;/p&gt;
-
-&lt;p&gt;É claro que parte dessa cobrança vem também de nós mesmos. Nós aceitamos o dever de se encaixar em um estereótipo (tenho que fazer outro post para falar melhor sobre esse assunto) e nos cobramos, principalmente quando não conseguimos o que queremos ou quando a vida não está do jeito que queremos.&lt;/p&gt;
-
-&lt;p&gt;E é nesse contexto em que vivemos que obras como Aventuras de Menino ganham o seu valor. Essas histórias nos proporcionam uma espécie de fuga da realidade, um momento para você parar de pensar naquela burrada que vez e acreditar que tudo vai se consertar. É uma forma de dizer para nos mesmos &amp;#8220;não leve a vida tão a sério&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;Acho que consegui falar sobre tudo pretendia. Eu estava pensando em seguir o padrão do primeiro post e dar uma nota para Aventuras de Menino, mas não consegui dar uma nota definitiva para o mangá, então vou dizer apenas que aconselho bastante para quem acha que vai se interessar pelas histórias.&lt;/p&gt;
-
-&lt;p&gt;Obrigado por ler e até mais.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/aventuras_de_menino/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/aventuras-de-menino/</guid>
+      <description>Quando a L&amp;amp;PM lançou Solanin e Aventuras de Menino aqui no Brasil eu fiquei bastante interessado em ambos os mangas, mas não comprei nenhum dos dois. Depois de um tempo eu acabei comprando Solanin, do qual eu ainda falarei aqui no blog, mas só resolvi adquirir Aventuras de Menino este mês.
+Ultimamente tem sido um hábito meu não pesquisar muito sobre qualquer material de entretenimento que eu consumo, uma forma de garantir que a obra tenha mais chances de me surpreender.</description>
     </item>
     
   </channel>

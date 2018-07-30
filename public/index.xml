@@ -2,367 +2,122 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Erick Pires</title>
-    <link>http://blog.erickpires.com/</link>
+    <link>https://blog.erickpires.com/</link>
     <description>Recent content on Erick Pires</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-br</language>
+    <language>pt-BR</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Sat, 12 Nov 2016 20:54:18 -0200</lastBuildDate>
-    <atom:link href="http://blog.erickpires.com/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 31 Mar 2017 11:22:49 -0300</lastBuildDate>
+    
+	<atom:link href="https://blog.erickpires.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Problema da Parada para programadores</title>
+      <link>https://blog.erickpires.com/post/problema_da_parada_para_programadores/</link>
+      <pubDate>Fri, 31 Mar 2017 11:22:49 -0300</pubDate>
+      
+      <guid>https://blog.erickpires.com/post/problema_da_parada_para_programadores/</guid>
+      <description>Aviso: Esse post contém pseudo-código, suposições lógicas, paradoxos de auto-referência e magia negra. Se você é alérgico a qualquer um desses itens ou a seus derivados, siga por sua conta em risco. Você foi avisado.
+Todo mundo que já passou algum tempo estudando computação já ouviu falar sobre o tal Problema da Parada (Halting Problem para alguns). Eu lembro claramente do meu professor de Computação I falando sobre o problema, descrevendo o resultado e tal, mas por algum motivo existe uma aura mística em torno no problema e ninguém ousa comentar exatamente o que significa o Problema da Parada ser indecidível.</description>
+    </item>
     
     <item>
       <title>A maldição da abstração</title>
-      <link>http://blog.erickpires.com/post/a_maldicao_da_abstracao/</link>
+      <link>https://blog.erickpires.com/post/a_maldicao_da_abstracao/</link>
       <pubDate>Sat, 12 Nov 2016 20:54:18 -0200</pubDate>
       
-      <guid>http://blog.erickpires.com/post/a_maldicao_da_abstracao/</guid>
-      <description>&lt;p&gt;Obviamente eu escolhi o nome mais chamativo que consegui imaginar para esse post (ao melhor estilo Buzzfeed), mas um nome mais preciso seria &amp;ldquo;Produtividade vs Entendimento&amp;rdquo;. Antes de falar sobre o motivo que me fez escrever esse texto, quero deixar claro essa relação entre abstração e produtividade, já que isso foi algo que eu levei um tempo para entender completamente.&lt;/p&gt;
-
-&lt;p&gt;Vou tomar como exemplo algo mais próximo de quem lida com computação, mas certamente o mesmo raciocínio se aplica a outras áreas. Quando alguém escreve um programa em assembly o programador tem um conhecimento enorme sobre o que o programa está fazendo, quais variáveis estão na memória e quais estão em registradores, quais registradores são usados para que, quais loops são desenrolados, quais funções sofrem inline, etc. Se o programador tivesse tempo infinito, ele poderia gerar o código de máquina mais otimizado possível para o seu programa (ok, alguém vai dizer que ele pode ficar preso em um mínimo local. Fine. Nesse caso ele chegaria muito próximo do código mais otimizado possível). É compreensível que alguns programadores não adotaram linguagens com um maior nível de abstração quando a transição para linguagens compiladas aconteceu, eles tinham muito mais controle sobre o programa em assembly. Mas nós não programamos em assembly hoje em dia. Nós criamos linguagens cada vez mais abstratas e o motivo disso, como sugerido antes, tem relação com a maior produtividade (ou seja, menor tempo para realizar um determinada tarefa) que essas linguagens proporcionam. Porém, nós abrimos mão de certa quantidade de controle para obter essa abstração, quanto menos o programador se preocupa sobre &amp;ldquo;detalhes&amp;rdquo; da implementação do programa, mais o compilador (ou interpretador, ou VM) tem que domar decisões por ele.&lt;/p&gt;
-
-&lt;p&gt;Bem, tudo que isso foi para dizer que embora abstração nos dê certa vantagem, abstração demais pode causar problemas. Como exemplo, vamos pensar na produção de um jogo. Muitas tarefas semelhantes (como atualizar o estado de todos os objetos, simular a &amp;ldquo;física&amp;rdquo; para todos os objetos, submeter dados para a GPU) precisam ser executadas durante um período de tempo razoavelmente curto (&lt;sup&gt;1&lt;/sup&gt;&amp;frasl;&lt;sub&gt;60&lt;/sub&gt; segundos) e em seguida o processo inteiro precisa ser refeito para preparar o próximo frame. Nesse cenário, é possível que um controle mais direto sobre, por exemplo, a alocação de memória seja necessário para garantir que os frames sejam gerados a tempo. Trabalhar com nível de abstração que não permita esse tipo de controle [insert Java hate comment here] provavelmente resultará em gambiarras pelo código e horas gastas tentando contornar essa limitação. Saber identificar o nível de abstração ideal para cada problema é uma habilidade que leva tempo para ser construída.&lt;/p&gt;
-
-&lt;p&gt;Agora vamos a algo que tem me incomodado faz um tempo. O aprendizado (e obviamente o ensino) de programação com pouca abstração tem deixado bastante a desejar. O problema mais imediatamente perceptível é que isso limita os tipos de problemas que alguém consegue resolver eficientemente. Eu não discordo da ideia de iniciar o aprendizado com certo nível de abstração, já que assim a taxa de crescimento da curva de aprendizagem se torna mais suave e é mais provável que quem está aprendendo continue motivado para aprender mais. Um ótimo exemplo disso é a plataforma do Arduino onde são abstraídas as etapas de acoplar ao microcontrolador um oscilador, um conversor serial-USB, entender uma IDE complicada, entender o que é ICSP, ligar um gravador e só então poder &amp;ldquo;ver&amp;rdquo; o código rodando. Além disso, as bibliotecas abstraem operações típicas de microcontroladores, como escrever em um registrador para ligar um Timer por exemplo. É interessante como o Arduino torna a programação de sistemas embutidos mais acessível para todo mundo. Mas eu vejo poucas tentativas de ensinar o lado mais low-level do funcionamento de um microcontrolador, e as que eu vejo tendem a criar uma dificuldade (ao meu ver) desnecessária. O mesmo pode ser dito sobre a forma que ponteiros são ensinados em um curso C, ou sobre um curso inteiro de programação em assembly.&lt;/p&gt;
-
-&lt;p&gt;Ok, talvez diminuir a abstração implique diretamente em uma maior dificuldade de aprender algo. Mas é possível que nós estejamos tentando ensinar de forma errada, e eu estou disposto a tentar responder essa questão. Mais precisamente, eu gostaria de ouvir as opiniões (e frustrações) de pessoas que notaram essa diferença brusca em dificuldade. Ideias sobre como deixar o aprendizado de conceitos low-level mais &amp;ldquo;suave&amp;rdquo; também são bem vindas. De qualquer forma, se você se interessar sobre o assunto por favor venha conversar comigo.&lt;/p&gt;
-
-&lt;p&gt;P.S.: Eu não deixei bem claro o motivo de uma curva de aprendizado &amp;ldquo;íngreme&amp;rdquo; me desagradar. Ao aprender algo com essa dificuldade é muito provável que quem está aprendendo deixe passar um conceito ou outro, simplesmente porque ele não consegue acompanhar a velocidade com que está sendo exposto a coisas novas. Com alguma probabilidade não nula esse conceito pode ser um &amp;ldquo;conceito chave&amp;rdquo; e nesse caso a pessoa termina com &amp;ldquo;buracos&amp;rdquo; no seu entendimento do assunto.&lt;/p&gt;
-
-&lt;p&gt;P.S.2: Eu não comentei sobre pessoas que só conseguem aprender em um estilo bottom-up, ou seja, de um estado de menor abstração em direção ao de maior abstração. O aprendizado para essas pessoas não precisa ser mais difícil do que o necessário.&lt;/p&gt;
-
-&lt;p&gt;P.S.3: Essa imagem
-&lt;img src=&#34;http://blog.erickpires.com/images/a_maldicao_da_abstracao/say-low-level-one-more-goddamn-time.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/post/a_maldicao_da_abstracao/</guid>
+      <description>Obviamente eu escolhi o nome mais chamativo que consegui imaginar para esse post (ao melhor estilo Buzzfeed), mas um nome mais preciso seria &amp;ldquo;Produtividade vs Entendimento&amp;rdquo;. Antes de falar sobre o motivo que me fez escrever esse texto, quero deixar claro essa relação entre abstração e produtividade, já que isso foi algo que eu levei um tempo para entender completamente.
+Vou tomar como exemplo algo mais próximo de quem lida com computação, mas certamente o mesmo raciocínio se aplica a outras áreas.</description>
     </item>
     
     <item>
       <title>A ignorância é uma benção</title>
-      <link>http://blog.erickpires.com/posts/a-ignorancia-e-uma-bencao/</link>
+      <link>https://blog.erickpires.com/posts/a-ignorancia-e-uma-bencao/</link>
       <pubDate>Sun, 07 Aug 2016 00:44:54 -0300</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/a-ignorancia-e-uma-bencao/</guid>
-      <description>&lt;p&gt;Ok, esse post tem como objetivo principal permitir-me retirar da minha cabaça algo que tem me incomodado com certa frequência, mas eu espero conseguir fazer com que algumas pessoas percebam que elas estão avaliando o mundo apenas da perspectiva delas e isso limita muito o quanto do mundo alguém pode entender.
-Deixe-me começar pelo título da postagem. Do meu ponto de vista, quando alguém diz algo parecido com essa frase é muito provável que estamos em um dos seguintes casos: ou estamos falando de um adolescente tentando parecer dark-and-edgy (tudo bem, a maioria de nós passamos por isso e tudo o que eu posso garantir é que isso tem cura), ou estamos falando de um ser humano que realmente acredita que de alguma forma conhecimento é uma espécie de maldição. Vamos nos concentrar no segundo caso. Na verdade, vamos tentar entender o que se passa pela cabeça de uma pessoa assim (vou tentar não agredir gratuitamente alguém).&lt;/p&gt;
-
-&lt;p&gt;Para simplificar a expressão &amp;ldquo;uma pessoa que acha que ignorância é uma benção&amp;rdquo;, vamos chamar essa pessoa de Bob (observe que não há perda de generalidade aqui, já que Bob pode ser qualquer uma dentre sete bilhões de pessoas e Bob pode ser mais de uma pessoa ao mesmo tempo). Vamos supor que Bob esteja lendo essa postagem. A primeira pergunta que eu tenho a fazer a Bob é como ele acha que o computador que ele está utilizando para ler esse texto (enquanto em outra aba ele rola pelo feed do Facebook) foi parar na mão dele? Será que em algum dia na segunda metade do século passado o Universo (substitua por Deus se preferir) decidiu que já estava na hora da humanidade descobrir o que um computador e neste momento uma caixa gigante de relés e válvulas materializou-se na Terra? (Eu gosto dessa imagem mental. Deus, Todo Poderoso, estava meio entediado e, em um momento de inspiração divina, pensou: &amp;ldquo;Ah, eu vou mostrar para esses primatas todo o potencial de uma Máquina de Turing&amp;rdquo;. Perceba que como Deus é todo poderoso, ele pode desafiar a causalidade e saber que uma Máquina de Turing tem esse nome mesmo antes de Turing, isso é incrível!).&lt;/p&gt;
-
-&lt;p&gt;É claro que eu não preciso utilizar um computador para mostrar o meu ponto. Eu posso utilizar o motor a diesel do ônibus que Bob utiliza para sair de casa. Posso utilizar o forno micro-ondas que Bob utiliza para aquecer a sua marmita. Ou a lâmpada que Bob acende todo dia quando chega em casa. Ou as ondas de rádio que trazem até a TV de Bob a informação necessária para exibir qualquer canal que ele vá assistir ao deitar-se no sofá.&lt;/p&gt;
-
-&lt;p&gt;Como será que nós, seres humanos, podemos ter conhecimento para fazer todas essas coisas funcionarem se a ignorância é uma benção? Será que Bob não percebe que até o fogo, algo que aparece na nossa mente sempre que pensamos em homens da caverna, precisa de conhecimento para ser domado? Será que Bob não percebe que está defecando pela boca quando diz que &amp;ldquo;a ignorância é uma benção&amp;rdquo;?&lt;/p&gt;
-
-&lt;p&gt;Eu entenderia se Bob dissesse que pensa que não há vantagem para ele ser curioso, entender como as coisas funcionam e criar coisas novas com o conhecimento adquirido. Eu o entenderia, diria e ele que ele nunca seria capaz de criar nada levemente parecido com a tecnologia que utilizamos hoje com o seu pensamento medíocre e provavelmente nunca mais voltaria a conversar com Bob. O que eu não consigo entender é como ele é capaz de pensar que todas as demais pessoas no mundo devem ser medíocres como ele.
-Sabe, Bob, há pessoas por aí que vivem tentando entender objetivamente como as coisas funcionam, procurando relações de causa-consequência e utilizando raciocínio dedutivo para entender um pouco mais sobre uma particularidade de um assunto em um universo repleto de &amp;ldquo;assuntos&amp;rdquo; e assim ampliar o conhecimento humano. Algumas dessas pessoas, as vezes por sorte, as vezes por talento e as vezes por esforço absurdo, chegam a realizações incríveis que modificam diretamente ou indiretamente a forma como vivemos e que com certeza mudam a forma como todos nós pensamos sobre o universo. Já outras dessas pessoas, a maioria na verdade, embora adquiram um conhecimento novo, fazem isso em doses extremamente pequenas e dessa forma é necessário muitas dessas pessoas e muitos anos para que você, Bob, consiga perceber a influência delas (e em seguida esquecer, com o pensamento medíocre).&lt;/p&gt;
-
-&lt;p&gt;&lt;center&gt; &amp;hellip; &lt;/center&gt;&lt;/p&gt;
-
-&lt;p&gt;Bem, para finalizar, deixe-me explicar o motivo de ter escrito tudo isso. Eu estava em uma conversa sobre acreditar ou não em astrologia (que é uma pseudociência criada numa época em que o Sistema Solar era conhecido pela metade, com dois dos maiores planetas faltando, e com o conhecimento de universo comparado a um fio de cabelo em relação ao que sabemos hoje). Pense por um instante, acreditar que eu sou introvertido porque o Sol estava alinhado com uma constelação no momento em que eu nasci é o mesmo que eu acreditar, de verdade, com fé absoluta, que amanhã será um bom dia porque eu vou levantar da cama com uma perna e não a outra. (Só mais um parêntese, como algumas pessoas sabem, todas as constelações só tem aquele formato quando vista da Terra. Se você acredita que o nosso ponto de vista é mais especial que qualquer outro em um Universo infinito, então você é uma das pessoas mais egocêntricas que eu conheço). De qualquer forma, voltando a conversa sobre astrologia, depois que expressei meu ponto de vista, fui questionado se eu não tinha a pretenção de ser feliz. Ora essa, agora eu não posso ser feliz e ter pensamento crítico sobre o que pode ou não ser verdade. Eu tenho que simplesmente aceitar uma &amp;ldquo;verdade&amp;rdquo; fabricada a milênios para ser feliz. Será que nenhum cientista no mundo é capaz de ser feliz? Na verdade, uma pessoa que acha que a única forma de ser feliz e a dela realmente é uma das mais egocêntricas que eu conheço.&lt;/p&gt;
-
-&lt;p&gt;Por fim, se para você eu pareço introvertido, não seria possível que você está sendo Bob e eu simplesmente decidi que não é interessante conversar com você?&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/a-ignorancia-e-uma-bencao/</guid>
+      <description>Ok, esse post tem como objetivo principal permitir-me retirar da minha cabaça algo que tem me incomodado com certa frequência, mas eu espero conseguir fazer com que algumas pessoas percebam que elas estão avaliando o mundo apenas da perspectiva delas e isso limita muito o quanto do mundo alguém pode entender. Deixe-me começar pelo título da postagem. Do meu ponto de vista, quando alguém diz algo parecido com essa frase é muito provável que estamos em um dos seguintes casos: ou estamos falando de um adolescente tentando parecer dark-and-edgy (tudo bem, a maioria de nós passamos por isso e tudo o que eu posso garantir é que isso tem cura), ou estamos falando de um ser humano que realmente acredita que de alguma forma conhecimento é uma espécie de maldição.</description>
     </item>
     
     <item>
       <title>Sobre</title>
-      <link>http://blog.erickpires.com/about/</link>
+      <link>https://blog.erickpires.com/about/</link>
       <pubDate>Fri, 17 Jun 2016 01:52:54 -0300</pubDate>
       
-      <guid>http://blog.erickpires.com/about/</guid>
-      <description>&lt;pre style=&#34;text-align: left;&#34;&gt;Hello World!&lt;/pre&gt;
-
-&lt;p&gt;Eu sou Erick Pires, estudante de Ciência da Computação e anti-social, se bem que acho que isso já está implícito. As vezes eu gosto de dizer que sou um bom programador e as vezes acho que o “bom” não deveria estar ali.&lt;/p&gt;
-
-&lt;p&gt;Além disso eu gosto de pensar sobre diversas coisas e nem sempre consigo discutir sobre essas coisas com outras pessoas, então este blog vai servir para eu discutir sobre esses assuntos e acreditar que alguém algum dia vá ler.&lt;/p&gt;
-
-&lt;p&gt;Os posts provavelmente serão sobre coisas que me interessam, mas eu prometo tentar não escrever nada chato sobre essas coisas chamadas computadores que todos adoram usar e ninguém quer saber como funcionam (o nome disso é abstração).&lt;/p&gt;
-
-&lt;p&gt;Também não vou postar muito ou com alguma frequência definida porque sou péssimo com isso.&lt;/p&gt;
-
-&lt;p&gt;Até mais.&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/about/</guid>
+      <description>Hello World! Eu sou Erick Pires, estudante de Ciência da Computação e anti-social, se bem que acho que isso já está implícito. As vezes eu gosto de dizer que sou um bom programador e as vezes acho que o “bom” não deveria estar ali.
+Além disso eu gosto de pensar sobre diversas coisas e nem sempre consigo discutir sobre essas coisas com outras pessoas, então este blog vai servir para eu discutir sobre esses assuntos e acreditar que alguém algum dia vá ler.</description>
     </item>
     
     <item>
       <title>Welcome Hugo</title>
-      <link>http://blog.erickpires.com/posts/welcome-hugo/</link>
+      <link>https://blog.erickpires.com/posts/welcome-hugo/</link>
       <pubDate>Fri, 17 Jun 2016 00:56:45 -0300</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/welcome-hugo/</guid>
-      <description>&lt;p&gt;Estamos abandonando o Wordpress e migrando para Hugo.&lt;/p&gt;
-
-&lt;p&gt;Depois de diversos problemas com o meu blog hospedado no OpenShift (incluindo a perda de todas as imagens dos meus posts), finalmente resolvi migrar para um blog estaticamente gerado. Há muito tempo um amigo me apresentou o Jekyll, mas por preguiça eu mantive o Wordpress. A ideia retornou a pouco tempo, enquanto pesquisava um pouco sobre &lt;a href=&#34;https://golang.org/&#34;&gt;Go&lt;/a&gt; ouvi falar sobre &lt;a href=&#34;http://gohugo.io/&#34;&gt;Hugo&lt;/a&gt; e resolvi tentar. Ainda não vi muita coisa sobre ele, mas já percebi que ele incorpora o elemento que mais me agrada em Go: &amp;ldquo;simplicidade&amp;rdquo;.&lt;/p&gt;
-
-&lt;p&gt;Então é isso, o blog está com um paradigma novo, eu pretendo escrever um pouco mais, alguns posts antigos desapareceram (ou melhor, eu sumi com eles) e as imagens dos posts que ficaram foram atualizadas (thanks, OpenShift).&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/welcome-hugo/</guid>
+      <description>Estamos abandonando o Wordpress e migrando para Hugo.
+Depois de diversos problemas com o meu blog hospedado no OpenShift (incluindo a perda de todas as imagens dos meus posts), finalmente resolvi migrar para um blog estaticamente gerado. Há muito tempo um amigo me apresentou o Jekyll, mas por preguiça eu mantive o Wordpress. A ideia retornou a pouco tempo, enquanto pesquisava um pouco sobre Go ouvi falar sobre Hugo e resolvi tentar.</description>
     </item>
     
     <item>
       <title>Sobre a pequenez (e a grandeza)</title>
-      <link>http://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</link>
+      <link>https://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</link>
       <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</guid>
-      <description>&lt;p&gt;Há uma semana eu tive a oportunidade de fazer uma caminhada por volta das 5:40 da manhã. O céu estava começando a trocar de cor, passando lentamente do negrume da noite para um azul ainda escuro característico da manhã. Ainda era possível ver um gradiente dessas duas cores colorindo o céu. O sol iria nascer à minha direita em instantes e ao olhar nessa direção eu percebi, entre duas montanhas, um ponto muito luminoso resistindo a claridade que nossa estrela jogava naquela região. Estranhamente, o ponto parecia distante, mas próximo ao mesmo tempo; como se eu pudesse alcançá-lo se seguisse na sua direção e erguesse a mão. Lá ao longe, entre aquelas duas montanhas, “brilhava” Vênus.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/venus/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/venus/02.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Observar aquele ponto brilhante no céu logo pela manhã me trouxe alguns pensamentos e sentimentos que eu tentarei transformar em texto.&lt;/p&gt;
-
-&lt;p&gt;Nós, seres de 1,7m de altura, estamos acostumados com a ideia de que a Terra é grande; e ela de fato é, se a compararmos com nós mesmos. Vênus, nosso planeta vizinho é pouco (em escala planetária) menor que a Terra. Ver um planeta ser reduzido a um pequeno ponto brilhante no céu dá uma ideia do quão grande é o Sistema Solar. E pensar que o Sistema Solar é só um minúsculo ponto “perdido” em meio a Via Láctea e que a Via Láctea é só mais uma entre bilhões de galaxias no Universo nos dá uma ideia de quão vasto é o Universo.&lt;/p&gt;
-
-&lt;p&gt;E saber a dimensão do Universo nos permite perceber o quão pequenos e insignificantes nós somos. Para muitos essa é uma visão muito deprimente, é uma visão triste que nos tira um possível significado para a vida.  E por isso as pessoas fogem dela com bastante frequência.&lt;/p&gt;
-
-&lt;p&gt;Mas para mim a percepção dessa realidade nos ensina bastante sobre humildade. Pegue um ser humano típico, como eu ou você, e olhe para todas as realizações dessa pessoa, olhe para todo o conhecimento que essa pessoa já adquiriu e gerou, olhe também todo o mal que ele ou ela já fez a este planeta. Agora compare tudo isso a todas as realizações, conhecimento,bondade,  maldade, etc. da humanidade. Essa pessoa tem tanto significado dentro da espécie humana quanto um planeta dentro do Sistema Solar. Essa pessoa, vista de fora, é apenas um pontinho que pode até mesmo brilhar, mas que é facilmente ofuscada pelo resto do Universo.&lt;/p&gt;
-
-&lt;p&gt;Por falar em ser humano, eu gosto muito de utilizar uma das características mais fantásticas da nossa espécie, a imaginação, e fazer suposições dentro de um cenário impossível. Talvez alguém pergunte qual a utilidade disso, e eu respondo que nem tudo precisa de uma utilidade; pensar simplesmente pelo fato de pensar é algo que todos deveriam fazer. Imagine, por um momento, que Vênus tenha consciência de seu lugar no Universo, será que nosso vizinho encararia isso como algo triste, assim como nós?&lt;/p&gt;
-
-&lt;p&gt;Durante um episódio da série Cosmos, Carl Sagan é perguntado por uma garotinha se o Sol é considerado parte da Via Láctea. E ele responde “Claro. Você é parte da Via Láctea[&amp;#8230;]”. Carl Sagan tinha um ponto de vista bem romântico quanto ao nosso lugar no Universo e é esse romantismo que torna Cosmos uma série tão fascinante. Não é fácil encarar a realidade de nós somos apenas um aglomerado de moléculas complexas trabalhando juntas para “driblar” a Segunda Lei da Termodinâmica. Mas enxergar a verdade através desse viés romântico é no mínimo mais reconfortante.&lt;/p&gt;
-
-&lt;p&gt;Portanto, a conclusão de eu tiro de tudo isso é que por maior que uma pessoa pense ser, ela ainda é minúscula diante de tudo, mas mesmo assim, ela ainda faz parte de algo incrível: a humanidade. E a humanidade faz parte de algo mais incrível ainda: o Universo.&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</guid>
+      <description>Há uma semana eu tive a oportunidade de fazer uma caminhada por volta das 5:40 da manhã. O céu estava começando a trocar de cor, passando lentamente do negrume da noite para um azul ainda escuro característico da manhã. Ainda era possível ver um gradiente dessas duas cores colorindo o céu. O sol iria nascer à minha direita em instantes e ao olhar nessa direção eu percebi, entre duas montanhas, um ponto muito luminoso resistindo a claridade que nossa estrela jogava naquela região.</description>
     </item>
     
     <item>
       <title>Todos deveriam aprender a programar? Spoiler: Não.</title>
-      <link>http://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</link>
+      <link>https://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</link>
       <pubDate>Thu, 03 Jul 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</guid>
-      <description>&lt;p&gt;Ok, essa pergunta nunca me foi feita diretamente (não que eu me lembre), mas ela já surgiu algumas vezes quando eu discuto comigo mesmo. Não exatamente essa pergunta, mas talvez a questão de como seria um mundo onde todas as pessoas sabem &amp;#8220;programar&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;Eu prometi na página Sobre que não escreveria nada muito chato sobre computadores e farei o meu melhor para cumprir a promessa.&lt;/p&gt;
-
-&lt;p&gt;Há algumas semanas o Youtube me recomendou esse &lt;a href=&#34;https://www.youtube.com/watch?v=nKIu9yen5nc&#34;&gt;vídeo&lt;/a&gt;. Eu não conheço o trabalho do code.org, então não vou julgá-los (até porque a ideia é boa). É um vídeo interessante de pessoas conhecidas falando sobre como escrever código é incrível (tem até o will.i.am), mas o que me chama atenção é a frase que inicia o vídeo, vinda de ninguém menos que Steve Jobs.&lt;/p&gt;
-
-&lt;p&gt;Eu não gosto muito de frases sem contexto porque eu já vi o que a internet (e não só ela) consegue fazer com essas coisas e se você é como eu é possível vê-la sendo dita &lt;a href=&#34;https://www.youtube.com/watch?v=mCDkxUbalCw&#34;&gt;aqui&lt;/a&gt;. Não sei se é relevante, mas este vídeo mostra mais ou menos em que período isso foi dito, o que ajuda a contextualizar.&lt;/p&gt;
-
-&lt;p&gt;Há aproximadamente um mês circulou pela internet um trecho de uma entrevista de Linus Torvalds na qual ele diz que não espera que todos saibam programar porque essa é uma atividade bem especifica. Na verdade a mídia foi um pouco mais sensacionalista (afinal eles tem filhos para alimentar) e não foi exatamente assim que a noticia apareceu na maioria dos blogs. De qualquer forma, a entrevista está &lt;a href=&#34;http://www.businessinsider.com/linus-torvalds-qa-2014-6&#34;&gt;aqui&lt;/a&gt; e é sempre melhor que um telefone sem fio.&lt;/p&gt;
-
-&lt;p&gt;Agora vem a pergunta, de qual lado eu estou. Bem, quem me conhece sabe que eu sou eu grande fã de Linux e talvez um pouco Apple hater, então não deve ser difícil descobrir a resposta (e ela está no título do post, anyway).&lt;/p&gt;
-
-&lt;p&gt;Este último parágrafo é uma brincadeira (só quero deixar isso claro). Se eu quisesse simplesmente responder essa pergunta teria feito isso no Twitter.&lt;/p&gt;
-
-&lt;p&gt;Eu acho que a questão não é exatamente essa e antes de falar sobre aprender a programar, eu quero falar sobre aprender. Nós temos uma instituição chamada escola cujo objetivo básico é ensinar (o que é diferente de levar alguém a aprender algo). Pessoas matriculam seus filhos em escolas onde acreditasse que esses filhos devam &amp;#8220;aprender&amp;#8221;. Porém, não é difícil encontrar filhos que retornam para casa sem &amp;#8220;aprender&amp;#8221; e cujos pais simplesmente não ligam.&lt;/p&gt;
-
-&lt;p&gt;Aqui é o momento perfeito para o &lt;a href=&#34;http://pt.wikipedia.org/wiki/Complexo_de_vira-lata&#34;&gt;complexo de vira-lata&lt;/a&gt; aparecer e dizer que o sistema de ensino brasileiro é uma merda[&amp;#8230;] E por isso eu vou deixar o sistema de ensino de fora. Além disso, eu vejo esse problema de forma mais geral, não somente em uma classe ou país específicos.&lt;/p&gt;
-
-&lt;p&gt;Para mim, o maior problema é em como a gente vê e trata curiosidade na nossa sociedade. Você consegue ouvir bastante &amp;#8220;Esse menino destrói todos os brinquedos que eu dou para ele&amp;#8221; mas dificilmente ouve &amp;#8220;Que incrível como ele, tão novo, já tem tanta curiosidade sobre como as coisas funcionam&amp;#8221;. É muito frustante ouvir a primeira frase, curiosidade não deveria ser associada a algo ruim. Certa vez minha mãe disse algo como &amp;#8220;&amp;#8230; porque você faz tantas perguntas?&amp;#8221; e meu pai respondeu &amp;#8220;Mas ele está certo, é assim que se &lt;strong&gt;aprende&lt;/strong&gt;&amp;#8220;.&lt;/p&gt;
-
-&lt;p&gt;Muitos, se não todos, conhecem histórias de filmes onde certo personagem sofre bullying por ser &amp;#8220;nerd&amp;#8221; (e uma questão interessante é porque na maioria da vezes esse personagem é do sexo masculino, mas isso estenderia demais este post). Embora esses filmes fantasiem um pouco em sua premissa e exagerem em alguns pontos (afinal, é isso que filmes fazem), esse desmerecimento daqueles que são curiosos e querem &amp;#8220;aprender&amp;#8221; é algo completamente normal e aceitável.&lt;/p&gt;
-
-&lt;p&gt;A origem desse comportamento vem do conceito de que é esperado que poucas pessoas sejam curiosas e queiram descobrir como as coisas funcionam. E como sempre, o grupo maior oprime o menor. O conceito em si não é mal, algumas consequências dele são. Quantas pessoas por aí simplesmente entram no seu carro pela manhã, viram a chave e saem para o transito sem ao menos se questionar como todo esse maquinário funciona? Afinal, há sempre trabalho a fazer, pouco tempo a &amp;#8220;perder&amp;#8221; e, além disso, &amp;#8220;nós&amp;#8221; já concordamos que não dá para aprender tudo.&lt;/p&gt;
-
-&lt;p&gt;Quantos dos que lerão esse post já foram ligar um ar-condicionado num dia quente e pararam para pensar em como ele funciona? Ou ainda, quantos sabem como uma &amp;#8220;simples&amp;#8221; fechadura funciona?&lt;/p&gt;
-
-&lt;p&gt;Há um motivo para essas coisas não serem aprendidas em escolas e é porque elas são chatas. Não realmente chatas, e sim chatas porque funcionam e é aceitável seguir sua vida sem saber desses detalhes. Eu gostaria destacar o verbo aprender na primeira frase desse parágrafo, pois talvez o seu professor de física tenha tentado te ensinar como um ar-condicionado funciona (afinal, isso é algo fantástico para ele), mas, por ser chato você ignorou.&lt;/p&gt;
-
-&lt;p&gt;Alguém pode argumentar que uma pessoa não tem acesso fácil a ferramentas e materiais para montar o seu próprio carro e que isso é diferente com programas de computador (editor de texto, interpretador de python, etc). E se você pensa assim, tudo bem, eu jogo fora minha analogia a partir daqui.&lt;/p&gt;
-
-&lt;p&gt;Nós temos uma enorme população que sequer sabem qual a cara de um programa de computador simplesmente porque não tiveram a curiosidade de pesquisar sobre. Meus pais não saberiam dizer exatamente o que eu estudo e o chute mais próximo que eles poderiam dar é &amp;#8220;Tem alguma coisa a ver com matemática&amp;#8221;. Eu ouço bastante &amp;#8220;Isso é muito difícil, deixa para os mais novos fazerem isso&amp;#8221;. Bem, desmontar completamente um motor, encontrar um defeito e depois remontá-lo me parece muito difícil, mas algumas pessoas fazem isso. Além disso, eu nunca ouvi falar de limite de idade para aprender (mas isso também devia do foco do post e isso aqui já está longo). Mas tudo bem, afinal não é necessário saber dessas coisas mesmo.&lt;/p&gt;
-
-&lt;p&gt;Aprender a programar começa com uma curiosidade sobre como essas incríveis máquinas chamadas computadores funcionam e como essas entidades chamadas programadores (que segundo dizem, transformam café em código) domam essas máquinas e fazem elas obedecerem as suas ordens.&lt;/p&gt;
-
-&lt;p&gt;Certamente é muito boa a experiência de querer que um computador faça algo e, percebendo que ninguém programou isso antes, ir lá e fazer você mesmo. Ou descobrir um algoritmo que resolve um problema de uma forma que você nunca imaginou e, mesmo que muitos já tenham feito isso, implementá-lo só para vê-lo respondendo corretamente. Ou até mesmo o poder de escrever um pequeno script no linux que diz ao computador: &amp;#8220;Sabe essa pasta aqui, então, entre em todas as pastas dentro dela, encontre só os arquivos que são jpg, converta-os para png, coloque os nomes em minúsculo e crie um zip com todos eles&amp;#8221;, depois apertar Enter e vê a &amp;#8220;mágica&amp;#8221; acontecer (dica: use &amp;#8211;verbose).&lt;/p&gt;
-
-&lt;p&gt;Porém, dar ordens a um computador é chato para a maioria das pessoas, ou como o Linus Torvalds disse: &amp;#8220;&amp;#8230;&lt;span style=&#34;color: #000000;&#34;&gt;não é algo que esperamos que a maioria das pessoas faça&amp;#8221;.&lt;/span&gt;&lt;span style=&#34;color: #000000;&#34;&gt;&lt;br /&gt; &lt;/span&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Eu concordo com o que Steve Jobs disse sobre programar ensinar a pensar.&lt;/p&gt;
-
-&lt;p&gt;Na verdade, ensina uma maneira de pensar e de ver o mundo que não é única e nem mais importante que as outras. Mas ao meu ver uma proposta mais interessante seria &amp;#8220;Todos deveriam acreditar que ser curioso sobre como as coisas funcionam é interessante e agradável&amp;#8221;. Assim as pessoas iriam experimentar programação e alguns iriam descobrir que gostam da ideia de dar ordens a computadores, não porque essa tecnologia é o &amp;#8220;nosso futuro&amp;#8221; como alguns dizem, mas porque é divertido e excitante.&lt;/p&gt;
-
-&lt;p&gt;E claro, eu sei que se isso realmente acontecesse a estrutura da sociedade mudaria completamente. E que isso provavelmente é utopia, já que a sociedade não mudaria para essa direção. Eu também não diria que sonho com um mundo assim. Só acho que &amp;#8220;Todos deveriam aprender a programar&amp;#8221; é uma ideia vazia se muitos não querem sequer aprender.&lt;/p&gt;
-
-&lt;p&gt;E assim eu termino o post. Ele ficou muito maior do que a maioria das coisas que eu escrevo, não tem imagens e representa a opinião de uma única pessoa. Pensando bem, esse post deve ser extremamente chato. Até mais.&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</guid>
+      <description>Ok, essa pergunta nunca me foi feita diretamente (não que eu me lembre), mas ela já surgiu algumas vezes quando eu discuto comigo mesmo. Não exatamente essa pergunta, mas talvez a questão de como seria um mundo onde todas as pessoas sabem &amp;#8220;programar&amp;#8221;.
+Eu prometi na página Sobre que não escreveria nada muito chato sobre computadores e farei o meu melhor para cumprir a promessa.
+Há algumas semanas o Youtube me recomendou esse vídeo.</description>
     </item>
     
     <item>
       <title>LIMBO e os finais que não são finais</title>
-      <link>http://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</link>
+      <link>https://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</link>
       <pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</guid>
-      <description>&lt;p&gt;Antes de começar, um aviso: eu vou escrever sobre detalhes da história de LIMBO. Então, se você for totalmente alérgico a spoilers sugiro que termine o jogo e depois volte aqui. Não acho que vou falar sobre algo que estrague o jogo, mas é melhor avisar né. De qualquer forma, o maior spoiler está no título (sorry).&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/01.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Há algum tempo (anos, talvez?) reclamaram comigo sobre o final de um livro que eu emprestei. Não lembro exatamente do diálogo, mas foi algo assim &amp;#8220;O livro é muito bom, mas ele poderia ter um final de verdade&amp;#8221;. Lembro-me de defender um pouco o ponto de vista de que aquela história não precisava de um final completamente conclusivo e tal. Pensando melhor agora, o livro termina com um Deus Ex Machina e o tempo é resetado, é realmente um final preguiçoso (ou de merda, dependendo do ponto de vista).&lt;/p&gt;
-
-&lt;p&gt;Mas algo que sempre me incomodou, mesmo quando sou eu criando as histórias, é o que seria um &amp;#8220;final de verdade&amp;#8221;. Acho que ficção nos é apresentada desde o início com um &amp;#8220;Felizes para sempre&amp;#8221;, que de certa forma também é um final preguiçoso. Outro exemplo que está sempre nos fazendo companhia é o &lt;strong&gt;final&lt;/strong&gt; de novelas da Globo. A característica principal desses finais é que se você perguntar como está o personagem X daqui a 50 anos existe sempre uma resposta medíocre (vivendo feliz para sempre).&lt;/p&gt;
-
-&lt;p&gt;Na verdade, o que realmente me incomoda é que a vida não é assim. Não existe um ponto a partir do qual a vida de todos os personagens será previsível. E eu não estou falando em realidade aqui, essas mesmas histórias são repletas de mudanças, de pessoas ganhando e perdendo poder e tentando prejudicar outras pessoas. Como eu deveria aceitar que a partir de um momento toda essa problemática se resolva completamente?&lt;/p&gt;
-
-&lt;p&gt;Certa vez um amigo comentou que ele prefere ler crônicas por não necessitarem de um final propriamente dito. Eu diria que uma crônica não é o único jeito de se conseguir isso, mas é uma boa forma de evitar pessoas reclamando porque a história termina com o personagem deitando na cama e dormindo, por exemplo. O mais interessante nem é descobrir pessoas que entendem que finais não precisam ser conclusivos, mas achar pessoas que gostam desse tipo de narrativa.&lt;/p&gt;
-
-&lt;p&gt;Há pouco tempo eu assisti &lt;a href=&#34;http://myanimelist.net/anime/20903/Harmonie&#34;&gt;Harmonie&lt;/a&gt; e &lt;a href=&#34;http://myanimelist.net/anime/12477/Sakasama_no_Patema&#34;&gt;Sakasama no Patema&lt;/a&gt;, ambos do diretor &lt;a href=&#34;http://myanimelist.net/people/6072/Yoshiura_Yasuhiro&#34;&gt;Yasuhiro Yoshiura&lt;/a&gt;. Dele também são &lt;a href=&#34;http://myanimelist.net/anime/770/Pale_Cocoon&#34;&gt;Pale Cocoon&lt;/a&gt; e &lt;a href=&#34;http://myanimelist.net/anime/7465/Eve_no_Jikan_(Movie)&#34;&gt;Eve no Jikan&lt;/a&gt; e algumas outras coisas que eu ainda não assisti. Algo interessante sobre este diretor (eu digo diretor, mas essas obras são bem autorais, muitas etapas da produção, incluindo o roteiro, são feitas por ele) é que nenhuma dessas histórias tem um final conclusivo. São histórias que se propõem a contar um período da vida de seus personagens, de desenvolve-los e fazer quem assiste se identificar com eles. Geralmente elas resolvem uma parte dos problemas envolvendo os personagens, mas terminam deixando coisas em aberto, dando a sensação de que aquilo foi só uma pequena etapa na vida daqueles personagens, que outra virá logo em seguida e permitindo a nós, espectadores, imaginarmos o que vem a seguir.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/02.jpg&#34; alt=&#34;Eve no Jikan (Time of Eve)&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Não sei quanto a outras pessoas, mas sempre que eu assisto algo com esse tipo de narrativa eu fico muito tempo imaginando o que acontece depois, criando diversas formas do enredo se desenvolver e contemplando a vastidão de possibilidades. Isso proporciona uma experiência diferente para cada pessoa e é interessante pensar que aquele mundo com aqueles mesmos personagens que existe na minha imaginação é diferente para muitas outras pessoas. É, de certa forma, também uma forma de desapego do autor que cria a história para nós até determinado ponto e depois a deixa livre para crescer sozinha na nossa imaginação.&lt;/p&gt;
-
-&lt;p&gt;Na minha opinião, Harmonie é um dos animes que melhor consegue despertar essa sensação. A animação conta apenas uma etapa da vida dos personagens e quando algo ocorre e que provavelmente vai gerar mudança na vida dos personagens, a história se encerra deixando claro que aquilo foi apenas um pedaço da vida deles (&lt;em&gt;um slice of life)&lt;/em&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/03.png&#34; alt=&#34;Harmonie&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Acho que está faltando LIMBO nesse texto, né. Quando eu me deparei com o hype de jogos indie, LIMBO foi um dos primeiros que eu ouvi falar e um dos últimos que eu resolvi comprar. Como sempre, eu demorei muito tempo para terminar esse jogo (eu sempre começo a jogar e depois paro por meses). A forma como a narrativa do jogo é mostrada, apenas com sombras e sons, mas sem diálogos, me interessou bastante. Embora os cenários sejam bem simples e a paleta de cores mais simples ainda, o jogo nos obriga a notar pequenos detalhes para conseguirmos entender mais da história.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/04.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Alguns fatos e muitas coisas curiosas nos são apresentadas, mas dar uma explicação para eles é uma tarefa quase subjetiva. O enredo e a jogabilidade se entrelaçam muito bem num excelente game design que me ajuda a justificar porque eu me interesso tanto por indies.&lt;/p&gt;
-
-&lt;p&gt;E depois de algumas (poucas) horas de jogo (e um pouco de non-sense) finalmente o jogo termina em aberto, permitindo ao jogador usar a sua interpretação do que viu para imaginar o que vem a seguir (isso se existir um depois). Eu ainda gosto de imaginar um antes, tentar entender o porquê daqueles garotos estarem na floresta, de onde vem essa aranha gigante, onde se passa a história.&lt;/p&gt;
-
-&lt;p&gt;Sei que algumas pessoas criticam a forma como essa história é contada e o fato dela deixar tanta coisa em aberto. E essas pessoas tem razão, o jogo não nos prepara para usar a imaginação para preencher o que falta. Pensando bem, talvez o maior problema seja a duração do jogo, quando eu comecei a criar teorias sobre a história foi justamente quando ela acabou. Bem, o jogo não é perfeito e eu não esperava que fosse.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/limbo/05.jpg&#34; alt=&#34;Adorei essa imagem&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Como eu disse acima, o game design não é perfeito, mas dá para notar a quantidade de esforço que esses caras fizeram para tornar o jogo o mais próximo possível do que foi idealizado (falar com palavras já é difícil, imagine usando a linguagem desse jogo). Algo que eu gosto muito de fazer é prestar atenção à mecânica do jogo (e outros detalhes técnicos) e imaginar quanto trabalho deve ter dado para programar isso. E por tudo isso, eu gostaria de agradecer ao esforço dessas pessoas que fizeram um excelente trabalho.&lt;/p&gt;
-
-&lt;p&gt;Até mais.&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</guid>
+      <description>Antes de começar, um aviso: eu vou escrever sobre detalhes da história de LIMBO. Então, se você for totalmente alérgico a spoilers sugiro que termine o jogo e depois volte aqui. Não acho que vou falar sobre algo que estrague o jogo, mas é melhor avisar né. De qualquer forma, o maior spoiler está no título (sorry).
+Há algum tempo (anos, talvez?) reclamaram comigo sobre o final de um livro que eu emprestei.</description>
     </item>
     
     <item>
       <title>Relacionando Donnie Darko com Madoka Magika</title>
-      <link>http://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</link>
+      <link>https://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</link>
       <pubDate>Thu, 24 Apr 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</guid>
-      <description>&lt;p&gt;Antes de começar um aviso: este post contém spoilers dos últimos minutos de  Madoka Magika e de algo que é revelado no final do episódio 8. Esses spoilers podem, e certamente irão, destruir a experiência de assistir ao anime, então se você tem planos de assisti-lo, faça isso primeiro e depois volte aqui. Como é possível deduzir pelo título, também falarei sobre Donnie Darko, mas não será um grande spoiler; ao meu ver, pelo menos. Falando sobre título, eu pensei em um outro bem interessante, mas ele seria um enorme spoiler.&lt;/p&gt;
-
-&lt;p&gt;Este final de semana eu resolvi assistir Donnie Darko pela terceira vez. É interessante como a cada vez que eu assisto a esse filme acabo percebendo algo novo e com certeza ainda há muito mais coisas para se perceber, já que eu ainda não posso dizer que entendi completamente o filme.&lt;/p&gt;
-
-&lt;p&gt;Desta vez algo na história me fez lembrar de Madoka Magika. Assistir novamente algo nos permite perceber melhor certas nuances no enredo. Vamos começar então com os spoilers.&lt;/p&gt;
-
-&lt;p&gt;Se você chegou até aqui deve saber que as personagens de Madoka Magika são garotas mágicas e que em troca de um pedido realizado se comprometem a arriscar suas &amp;#8220;vidas&amp;#8221; enfrentando seres conhecidos como bruxas. No final do oitavo episódio é revelado que as bruxas se originam das próprias garotas mágicas. Ao final do anime vemos uma imensa Soul Gem se tornar uma Grief Seed e um pouco da sua transformação da Madoka em bruxa.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/01.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;No anime isso não é dito explicitamente, mas o nome de bruxa da Madoka é &lt;a href=&#34;http://wiki.puella-magi.net/Kriemhild_Gretchen&#34;&gt;Kriemhild Gretchen&lt;/a&gt;. Esse é um ponto que me chamou atenção, já que em Donnie Darko temos uma personagem chamada Gretchen.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Uma ideia da Gretchen que é citada mais de uma vez no filme é a de que se fosse possível ter uma máquina seria também possível voltar ao passado e retirar das pessoas quaisquer lembranças ruins. Sabemos que a personagem possui um trauma no passado e isso explica de onde veio essa ideia. Em outra cena Donnie e Gretchen apresentam um trabalho de ciências propondo um dispositivo cujo objetivo é permitir que os pais criem memórias &amp;#8220;boas&amp;#8221; para seus filhos. O filme deixa bem claro que memórias da infância são bem fortes.&lt;/p&gt;
-
-&lt;p&gt;Essa ideia tem o mesmo principio do pedido feito pela Madoka, estar com todas as garotas mágicas (seja do passado, presente ou futuro) e poder livra-las do sofrimento de se transformarem em bruxas. Pensando bem, morte é um assunto em comum entre Donnie Darko e Madoka Magika, e eu concordo com ambas as obras com relação à ideia de que o momento da morte não deveria ser sofrimento para qualquer pessoa.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/03.png&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Porém, como Madoka Magika deixa claro, ter o poder retirar as memórias de sofrimento das pessoas seria o mesmo que ter poderes de um deus (sim, com &amp;#8220;d&amp;#8221; minúsculo, não quero arrumar problemas e entrar em discussões desnecessárias). No filme de Steins; Gate é dito que é porque o tempo segue sempre em um sentido (Einstein discordaria) que o ser humano é capaz de superar acontecimentos ruins e seguir em frente. Acho que progresso é feito a partir de falhas.&lt;/p&gt;
-
-&lt;p&gt;O ser humano nunca foi muito bom em ser deus (até por isso que ele criou um em vez de se tornar um) e o poder de alterar as memórias de qualquer pessoa da história é bastante perigoso. Como a última cena que citei sobre Donnie Darko lembra, quem tem o poder que criar lembranças boas também tem o poder que criar lembranças ruins e podemos lembrar que o poder tende a corromper.&lt;/p&gt;
-
-&lt;p&gt;Portanto, caro leitor, na próxima vez que pensar: &amp;#8220;Poxa, eu queria ter uma máquina do tempo&amp;#8221;, lembre-se da responsabilidade que vem com ela e reflita um pouco sobre o uso que faria dela.&lt;/p&gt;
-
-&lt;p&gt;Eu esperava encontrar algo relacionado a essas duas obras pesquisando no Google, mas não encontrei. O que indica que se em algum lugar dessa internet houver algo falando sobre isso, deve ser em algum blog do tamanho do meu. Mas isso é assunto para outro post.&lt;/p&gt;
-
-&lt;p&gt;Até mais.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/madoka/04.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</guid>
+      <description>Antes de começar um aviso: este post contém spoilers dos últimos minutos de Madoka Magika e de algo que é revelado no final do episódio 8. Esses spoilers podem, e certamente irão, destruir a experiência de assistir ao anime, então se você tem planos de assisti-lo, faça isso primeiro e depois volte aqui. Como é possível deduzir pelo título, também falarei sobre Donnie Darko, mas não será um grande spoiler; ao meu ver, pelo menos.</description>
     </item>
     
     <item>
       <title>Aventuras de Menino</title>
-      <link>http://blog.erickpires.com/posts/aventuras-de-menino/</link>
+      <link>https://blog.erickpires.com/posts/aventuras-de-menino/</link>
       <pubDate>Sun, 30 Mar 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/aventuras-de-menino/</guid>
-      <description>&lt;p&gt;Quando a L&amp;amp;PM lançou Solanin e Aventuras de Menino aqui no Brasil eu fiquei bastante interessado em ambos os mangas, mas não comprei nenhum dos dois. Depois de um tempo eu acabei comprando Solanin, do qual eu ainda falarei aqui no blog, mas só resolvi adquirir Aventuras de Menino este mês.&lt;/p&gt;
-
-&lt;p&gt;Ultimamente tem sido um hábito meu não pesquisar muito sobre qualquer material de entretenimento que eu consumo, uma forma de garantir que a obra tenha mais chances de me surpreender. O que eu já sabia sobre a história é o que o título revela, certa nostalgia com os tempos de &amp;#8220;menino&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/aventuras_de_menino/01.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Antes de comentar qualquer coisa quero dizer que eu não acho que essa história deva ser lida por qualquer pessoa, é necessário um certo grau de maturidade para entender a forma de agir dos personagens, assim como conseguir compreender de onde vem essa nostalgia (ou seja, não é voltado para um público muito novo).&lt;/p&gt;
-
-&lt;p&gt;Algo que vale a pena comentar também é que não haverá grandes spoilers nesse texto (um amigo me disse que achou que encontraria um spoiler de 2001 no último post).&lt;/p&gt;
-
-&lt;p&gt;Aventuras de Menino é uma leitura bem confortável, embora as histórias tratem da vida pessoal dos personagens e de seus problemas, em momento algum ela tenta emocionar excessivamente o leitor, ou passar uma moral complicada. É claro que algumas pessoas podem se conectar com a história dos personagens e ter uma leitura mais intensa (talvez até mesmo refletir sobre como anda a sua vida pessoal).&lt;/p&gt;
-
-&lt;p&gt;O mangá é divido em contos independentes que possuem uma temática bem comum: os seus protagonistas possuem problemas não resolvidos ou se tornaram pessoas frias para suportar a vida.&lt;/p&gt;
-
-&lt;p&gt;Existe uma cobrança da nossa sociedade de que eventualmente os meninos se tornem homens. Um dia todo garoto deve parar de sonhar, criar objetivos e metas para a vida e seguir nessa direção. Ser um grande cientista e ganhar um Nobel, descobrir outros mundos, ser um músico famoso ou um grande esportista, tudo isso é &amp;#8220;coisa de criança&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;Certa vez, durante o meu primeiro ano do ensino médio, um colega de turma disse que seria um jogador de futebol para uma professora e esta respondeu: &amp;#8220;Se você ainda não foi descoberto até os quinze anos, é melhor pensar em outra coisa para fazer&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;Eu mesmo sempre fui uma pessoa que fantasia diversos acontecimentos, provavelmente eu nem conseguiria contar quantos poderes especiais eu já tive até hoje.&lt;/p&gt;
-
-&lt;p&gt;Uma boa pergunta é: &amp;#8220;Por que eu não posso mais ser um super herói?&amp;#8221; Eu não tenho mais conhecimento de que isso é impossível agora do que quando eu tinha sete anos.&lt;/p&gt;
-
-&lt;p&gt;Para os personagens do mangá essa situação é ainda pior. Todos eles precisam ser vistos como homens bem sucedidos financeiramente e possíveis chefes de família. Deles é cobrado que estejam sempre firmes como rocha. É uma sociedade em que o contraste entre o sucesso e o fracasso é tão grande que forma um abismo entre pessoas.&lt;/p&gt;
-
-&lt;p&gt;Talvez seja por isso que nossos avôs costumam ter o hábito de contar histórias sobre os tempos de juventude. Minha avó certa vez me disse que depois que a pessoa fica velha ela volta a ser criança. É reconfortante lembrar da época em que não havia a todo momento, cobranças sobre como agir ou como tratar situações e até mesmo pessoas. (Já me disseram &amp;#8220;Você tem que falar mais com as pessoas&amp;#8221;. Nem anti-social eu tenho o direito de ser).&lt;/p&gt;
-
-&lt;p&gt;É claro que parte dessa cobrança vem também de nós mesmos. Nós aceitamos o dever de se encaixar em um estereótipo (tenho que fazer outro post para falar melhor sobre esse assunto) e nos cobramos, principalmente quando não conseguimos o que queremos ou quando a vida não está do jeito que queremos.&lt;/p&gt;
-
-&lt;p&gt;E é nesse contexto em que vivemos que obras como Aventuras de Menino ganham o seu valor. Essas histórias nos proporcionam uma espécie de fuga da realidade, um momento para você parar de pensar naquela burrada que vez e acreditar que tudo vai se consertar. É uma forma de dizer para nos mesmos &amp;#8220;não leve a vida tão a sério&amp;#8221;.&lt;/p&gt;
-
-&lt;p&gt;Acho que consegui falar sobre tudo pretendia. Eu estava pensando em seguir o padrão do primeiro post e dar uma nota para Aventuras de Menino, mas não consegui dar uma nota definitiva para o mangá, então vou dizer apenas que aconselho bastante para quem acha que vai se interessar pelas histórias.&lt;/p&gt;
-
-&lt;p&gt;Obrigado por ler e até mais.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/aventuras_de_menino/02.jpg&#34; alt=&#34; &#34; /&gt;&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/aventuras-de-menino/</guid>
+      <description>Quando a L&amp;amp;PM lançou Solanin e Aventuras de Menino aqui no Brasil eu fiquei bastante interessado em ambos os mangas, mas não comprei nenhum dos dois. Depois de um tempo eu acabei comprando Solanin, do qual eu ainda falarei aqui no blog, mas só resolvi adquirir Aventuras de Menino este mês.
+Ultimamente tem sido um hábito meu não pesquisar muito sobre qualquer material de entretenimento que eu consumo, uma forma de garantir que a obra tenha mais chances de me surpreender.</description>
     </item>
     
     <item>
       <title>Super Hexagon e o aprendizado por repetição</title>
-      <link>http://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</link>
+      <link>https://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</link>
       <pubDate>Fri, 17 Jan 2014 00:00:00 +0000</pubDate>
       
-      <guid>http://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</guid>
-      <description>&lt;p&gt;Super Hexagon, para quem não conhece, é um jogo indie produzido por Terry Cavanagh em 2012 para iOS, Windows e OS X, e que ganhou lançamentos para Linux,  Android e Blackberry em 2013. Apesar disso, eu só fui conhecê-lo em meados de 2013.&lt;/p&gt;
-
-&lt;p&gt;É um jogo bastante viciante, o fato de eu ter mais de nove horas registradas pelo Steam comprova isso, mas algo em que eu fiquei pensando durante uma sessão do jogo (enquanto eu morria diversas vezes) é o motivo que me leva a &amp;#8220;perder&amp;#8221; tanto tempo com esse jogo.&lt;/p&gt;
-
-&lt;p&gt;Super Hexagon é um daqueles jogos onde o objetivo é treinar os seus reflexos e coordenação motora para continuar vivo. O início jogo chegou frustante, eu não durava quinze segundos no modo mais simples. Porém, com algum tempo de jogo certos truques aparecem.&lt;/p&gt;
-
-&lt;p&gt;O primeiro grande truque que se aprende é que as fases do jogo possuem padrões que se repetem e não há mais do que cinco, talvez seis, padrões por nível. O segundo truque vem da época em que eu jogava Guitar Hero, não olhar para o &amp;#8220;personagem&amp;#8221; e sim para as bordas da tela, isso ajuda a ter tempo para processar o próximo movimento, mas te obriga a jogar com visão periférica.&lt;/p&gt;
-
-&lt;p&gt;&lt;img src=&#34;http://blog.erickpires.com/images/super_hexagon/super_hexagon.jpg&#34; alt=&#34;Um dos padrões encontrados no jogo.&#34; /&gt;&lt;/p&gt;
-
-&lt;p&gt;Outra característica do jogo é que controlar, embora seja simplesmente rodar para um dos lados, não é uma tarefa simples e a diferença entre parar no local certo ou se desviar alguns pixels e morrer está em frações de segundo a mais com o botão apertado.&lt;/p&gt;
-
-&lt;p&gt;Porém, depois de jogar algumas horas eu fiz uma observação que ainda não tinha me ocorrido em outros jogos do gênero, eu estava aprendendo.&lt;/p&gt;
-
-&lt;p&gt;Depois de ser exposto ao mesmo padrão diversas vezes eu aprendi como passar por ele ao ponto de fazer isso quase involuntariamente, para os padrões mais simples é claro. Acostumar-se com os controles demanda um pouco de tempo também, mas é possível chegar a um ponto onde isso fica &amp;#8220;intuitivo&amp;#8221;. Algo interessante é a velocidade com que as barreiras vem em direção ao centro da tela, essa velocidade vai aumentando conforme o jogador vai progredindo no jogo, então aprender o tempo certo de cada movimento tem que ser feito conforme o jogo avança.&lt;/p&gt;
-
-&lt;p&gt;E quando você acha que já está pronto para tentar o próximo nível todo esse processo de aprendizado deve ser iniciado quase do zero, pois muitas características mudam e o nível de dificuldade avança a passos enormes.&lt;/p&gt;
-
-&lt;p&gt;Surgiu então a seguinte pergunta: &amp;#8220;Como eu estou aprendendo a lidar com essas situações?&amp;#8221;. A resposta é bem simples e está no título do post, o aprendizado ocorre por ficar repetindo diversas vezes o mesmo padrão. As pessoas estão acostumadas com o conceito de que repetição implica em aprendizado. Uma pequena observação nos nossos tempos de escola demonstram isso, decorar as tabuadas até dez, conjugar dezenas de verbos ou resolver problemas de regra-de-três que só trocam o número de caminhões de areia por quantidade de combustível.&lt;/p&gt;
-
-&lt;p&gt;Esse método de aprendizado funciona com a maioria das pessoas, embora não seja o mais eficiente para todo mundo. E é menos custoso aplicar um método que vai funcionar com a maioria dos estudantes do que descobrir como cada um deles aprende melhor.&lt;/p&gt;
-
-&lt;p&gt;Mas qual é a diferença entre Super Hexagon e matemática? Porque aprender matemática não é divertido, algumas pessoas pensarão. Para chegar a essa resposta eu resolvi analisar outro caso.&lt;/p&gt;
-
-&lt;p&gt;Na minha primeira aula de Computação o professor passou à turma a seguinte mensagem: &amp;#8220;Não dá para aprender programação se você não programar&amp;#8221;. Aqui aparece novamente o aprendizado por repetição, você programa até estar fazendo isso de forma decente. Mas existe uma diferença entre aprender a tabuada de sete (que eu não sei direito até hoje, mas não conte isso para ninguém) e aprender a programar. Saber a tabuada de sete é um processo algorítmico, eu consigo construir uma lista de instruções e, seguindo essa lista, você consegue multiplicar qualquer número por sete (ou por outro número qualquer). Isso significa que qualquer computador é capaz de responder a tabuada. Porém, programar é diferente e até mesmo um simples problema como ordenar uma lista de números da forma mais simples (em O(n²)) requer um pouco de criatividade e algumas habilidades cognitivas (principalmente para alguém que nunca viu C na vida).&lt;/p&gt;
-
-&lt;p&gt;Então é isso? Repetir tarefas algorítmicas não é divertido. Eu cheguei a pensar assim durante um tempo, mas na verdade não é essa a resposta, jogar Super Hexagon também é algorítmico.&lt;/p&gt;
-
-&lt;p&gt;Programar é divertido por alguns motivos e um deles é a autonomia. A qualquer momento você pode escolher um problema, ou criar um, e fazer um programa que o resolve. E até mesmo quando o problema foi proposto pelo professor, não há somente um jeito resolvê-lo e quais linhas de código você vai usar é uma escolha própria.&lt;/p&gt;
-
-&lt;p&gt;Outro motivo é a diversidade de problemas oferecidos, implementar o &lt;a href=&#34;http://pt.wikipedia.org/wiki/Heapsort&#34;&gt;Heapsort&lt;/a&gt; (sim, o Heapsort é o meu algoritmo favorito para ordenação) é completamente diferente de implementar uma &lt;a href=&#34;http://pt.wikipedia.org/wiki/%C3%81rvore_B&#34;&gt;Árvore B&lt;/a&gt;. Trocar para a tabuada de onze não vai fazer tanta diferença assim.&lt;/p&gt;
-
-&lt;p&gt;Por fim, programar nos oferece uma sensação de progresso. Já parei diversas vezes para comparar como eu resolveria certo problema há um ano e como eu o resolvo hoje. Ou até mesmo problemas que eu não conseguiria resolver no passado eu consigo agora. O ser humano é competitivo e é possível competir até consigo mesmo.&lt;/p&gt;
-
-&lt;p&gt;Esses três pontos estão presentes em Super Hexagon. O fato do jogador poder escolher em qual nível jogar é uma forma de autonomia, mas é possível encontrá-la de outras formas, por exemplo, ao se deparar com um padrão novo o jogador deve criar uma forma de passar por ele, e mesmo que só exista uma forma de para tal, o jogador não precisa saber disso. Além disso, um final explícito para cada nível não existe e o objetivo é definido pelo jogador (você quer simplesmente passar os 60 segundos necessários para desbloquear um novo nível ou bater aquele recorde do seu amigo de 60.51 segundos?)&lt;/p&gt;
-
-&lt;p&gt;Cada fase do jogo é gerada aleatoriamente e isso garante a diversidade. Além disso, quando se cansar de um nível o jogador sempre pode tentar em outro diferente.&lt;/p&gt;
-
-&lt;p&gt;A ideia de progresso é bem evidente com o jogo mostrando o recorde atual do jogador. Mas o jogo ainda tem um ranking onde é possível comparar o seu tempo com os de seus amigos ou com o ranking mundial e isso traz uma outra forma de competitividade.&lt;/p&gt;
-
-&lt;p&gt;Esses três pontos compõem, para mim, o sistema de recompensa nesse jogo e são a minha explicação para o motivo de Super Hexagon ser divertido. Talvez uma prova disso seja outro jogo de Terry Cavanagh chamado VVVVVV. Assim como Super Hexagon, este é jogo extremamente difícil (ou talvez eu seja ruim na maioria dos jogos), mas não consegue ser tão divertido quanto o outro, pois não possui um bom sistema de recompensa.&lt;/p&gt;
-
-&lt;p&gt;Isso mostra que até a repetição de tarefas algorítmicas pode ser interessante se o sistema correto de recompensa for empregado. É claro que &amp;#8220;passar de ano (ou de semestre)&amp;#8221; é uma recompensa, mas não suficiente para fazer pessoas se interessarem por assuntos como matemática. Até mesmo porque eu nunca conheci alguém que resolvesse uma lista com 20 questões de interpolação polinomial porque é divertido.&lt;/p&gt;
-
-&lt;p&gt;Por fim eu gostaria de citar a trilha sonora de Super Hexagon que certamente é mais um dos pontos fortes do jogo, assim como a trilha sonora de VVVVVV que é tão boa quanto.&lt;/p&gt;
-
-&lt;p&gt;Nota para Super Hexagon: 9.2 / 10&lt;/p&gt;
-</description>
+      <guid>https://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</guid>
+      <description>Super Hexagon, para quem não conhece, é um jogo indie produzido por Terry Cavanagh em 2012 para iOS, Windows e OS X, e que ganhou lançamentos para Linux, Android e Blackberry em 2013. Apesar disso, eu só fui conhecê-lo em meados de 2013.
+É um jogo bastante viciante, o fato de eu ter mais de nove horas registradas pelo Steam comprova isso, mas algo em que eu fiquei pensando durante uma sessão do jogo (enquanto eu morria diversas vezes) é o motivo que me leva a &amp;#8220;perder&amp;#8221; tanto tempo com esse jogo.</description>
     </item>
     
   </channel>

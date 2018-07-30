@@ -27,3 +27,4 @@ P.S.2: Eu não comentei sobre pessoas que só conseguem aprender em um estilo bo
 
 P.S.3: Essa imagem
 ![ ](/images/a_maldicao_da_abstracao/say-low-level-one-more-goddamn-time.jpg)
+

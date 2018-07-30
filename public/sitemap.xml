@@ -1,59 +1,100 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>http://blog.erickpires.com/</loc>
+    <loc>https://blog.erickpires.com/post/problema_da_parada_para_programadores/</loc>
+    <lastmod>2017-03-31T11:22:49-03:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/post/a_maldicao_da_abstracao/</loc>
     <lastmod>2016-11-12T20:54:18-02:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/post/a_maldicao_da_abstracao/</loc>
-    <lastmod>2016-11-12T20:54:18-02:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>http://blog.erickpires.com/posts/a-ignorancia-e-uma-bencao/</loc>
+    <loc>https://blog.erickpires.com/posts/a-ignorancia-e-uma-bencao/</loc>
     <lastmod>2016-08-07T00:44:54-03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/about/</loc>
+    <loc>https://blog.erickpires.com/about/</loc>
     <lastmod>2016-06-17T01:52:54-03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/posts/welcome-hugo/</loc>
+    <loc>https://blog.erickpires.com/posts/welcome-hugo/</loc>
     <lastmod>2016-06-17T00:56:45-03:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</loc>
+    <loc>https://blog.erickpires.com/posts/sobre-a-pequenez-e-a-grandeza/</loc>
     <lastmod>2015-09-06T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</loc>
+    <loc>https://blog.erickpires.com/posts/todos-deveriam-aprender-a-programar-spoiler-nao/</loc>
     <lastmod>2014-07-03T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</loc>
+    <loc>https://blog.erickpires.com/posts/limbo-e-os-finais-que-nao-sao-finais/</loc>
     <lastmod>2014-06-21T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</loc>
+    <loc>https://blog.erickpires.com/posts/relacionando-donnie-darko-com-madoka-magika/</loc>
     <lastmod>2014-04-24T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/posts/aventuras-de-menino/</loc>
+    <loc>https://blog.erickpires.com/posts/aventuras-de-menino/</loc>
     <lastmod>2014-03-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>http://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</loc>
+    <loc>https://blog.erickpires.com/posts/super-hexagon-e-o-aprendizado-por-repeticao/</loc>
     <lastmod>2014-01-17T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/categories/computadores/</loc>
+    <lastmod>2014-07-03T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/</loc>
+    <lastmod>2017-03-31T11:22:49-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/categories/jogos/</loc>
+    <lastmod>2014-06-21T00:00:00+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/post/</loc>
+    <lastmod>2017-03-31T11:22:49-03:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.erickpires.com/categories/uncategorized/</loc>
+    <lastmod>2015-09-06T00:00:00+00:00</lastmod>
+    <priority>0</priority>
   </url>
   
 </urlset>

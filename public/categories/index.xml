@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Erick Pires</title>
+    <link>https://blog.erickpires.com/categories/</link>
+    <description>Recent content in Categories on Erick Pires</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-BR</language>
+    <copyright>All rights reserved - 2016</copyright>
+    
+	<atom:link href="https://blog.erickpires.com/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Computadores</title>
+      <link>https://blog.erickpires.com/categories/computadores/</link>
+      <pubDate>Thu, 03 Jul 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.erickpires.com/categories/computadores/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jogos</title>
+      <link>https://blog.erickpires.com/categories/jogos/</link>
+      <pubDate>Sat, 21 Jun 2014 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.erickpires.com/categories/jogos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Uncategorized</title>
+      <link>https://blog.erickpires.com/categories/uncategorized/</link>
+      <pubDate>Sun, 06 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://blog.erickpires.com/categories/uncategorized/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

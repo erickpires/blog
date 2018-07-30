@@ -1,0 +1,87 @@
++++
+draft = false
+title = "Problema da Parada para programadores"
+image = "images/problema_da_parada_para_programadores/cover.jpg"
+comments = true
+author = ""
+date = "2017-03-31T11:22:49-03:00"
+slug = "problema_da_parada_para_programadores"
+
+share = true
+menu = ""
+
++++
+
+Aviso: Esse post contém pseudo-código, suposições lógicas, paradoxos de auto-referência e magia negra. Se você é alérgico a qualquer um desses itens ou a seus derivados, siga por sua conta em risco. Você foi avisado.
+
+Todo mundo que já passou algum tempo estudando computação já ouviu falar sobre o tal Problema da Parada (Halting Problem para alguns). Eu lembro claramente do meu professor de Computação I falando sobre o problema, descrevendo o resultado e tal, mas por algum motivo existe uma aura mística em torno no problema e ninguém ousa comentar exatamente o que significa o Problema da Parada ser indecidível. Eventualmente eu cheguei a disciplina de Linguagens Formais e vi uma prova formal envolvendo várias Máquinas de Turing e finalmente tive a sensação de ganhado um nível de experiência.
+
+Uma prova formal não é necessária para se ter alguma intuição do que significa o Problema da Parada ser indecidível, eu já vi algumas "demonstrações" que tentam passar certa intuição sobre o assunto ([como esta][1]). Esse post é uma tentativa minha de passar essa mesma intuição para qualquer pessoa que tenha algum conhecimento sobre programação. Ok, chega de introdução e mãos a obra!
+
+<br>
+
+Vamos começar com uma simples função:
+```
+factorial(n) {
+    if (n == 0) {
+        return (1)
+    } else {
+        return (n * factorial(n - 1))
+    }
+}
+```
+E para quem não gosta de recursão, temos a versão iterativa:
+```
+factorial(n) {
+    result = 1
+    while(n != 0) {
+        result = result * n
+        n = n - 1
+    }
+
+    return (result)
+}
+```
+
+Agora, ao ler esses códigos algumas pessoas dirão: "Erick, se o valor de `n` for negativo a sua função vai entrar em loop infinito. Como você pode se dizer um programador e escrever um código horrível desses?". E esse é exatamente o ponto, dependendo do valor de `n` a minha função pode retornar um valor ou executar para sempre. Na verdade isso é uma pequena mentira, em qualquer computador real a primeira implementação provavelmente vai causar um estouro de pilha (stack overflow) e na segunda o valor de `n` vai eventualmente ficar tão negativo que vai voltar a ser positivo (integer underflow). A única forma dessa função rodar para sempre é com memória infinita (para guardar a pilha da primeira implementação e para conseguir precisão infinita para os valores de `n` nas duas implementações). É por esse motivo que a prova formal que eu citei no início envolve um computador hipotético com memória infinita (a Máquina de Turing, nesse caso) e nós vamos precisar acreditar em memória infinita também.
+
+E já que eu toquei no assunto polêmico de memória infinita, é melhor eu aproveitar o momento para tirar mais um coelho da cartola:
+```
+source_code(f) { ... }
+```
+A função `source_code` recebe uma função como argumento e retorna o código-fonte da função recebida. O que exatamente é código-fonte nesse contexto não precisa ser bem definido, desde que a saída de `source_code` possa ser usada por outras partes do programa que precisam ter conhecimento sobre como uma função qualquer foi implementada. Se alguém estiver interessado em saber como `source_code` é implementada, as respostas mais prováveis são: magia negra, unicórnios e duendes. Lembrando que em caso de curiosidade absurda, é sempre possível executar `source_code(source_code)` e descobrir :).
+
+Podemos finalmente falar sobre o Problema da Parada. Na terminologia que estamos usando até aqui, o Problema pode ser enunciado da seguinte forma: "É possível escrever uma função que recebe como argumentos o código-fonte de qualquer função e uma possível entrada para essa função qualquer e retornar se a função em questão vai ou não parar (não rodar para sempre, executar em tempo finito)?". Nós temos dois problemas aqui, o primeiro é que o que eu disse é confuso para caramba (não sei se eu deveria evitar palavrões aqui). O segundo problema é que a função que eu descrevi é bem complicada de se imaginar, muito mais complicado seria escrevê-la. Felizmente nós não precisamos tentar implementá-la, só precisamos supor que ela existe para ver quais as consequências da sua existência, e vamos aproveitar para dar um nome a ela, vamos chamá-la de `will_it_halt`. Agora eu posso dar um exemplo e tentar resolver o primeiro problema também.
+
+```
+a = will_it_halt(source_code(factorial), 7)
+b = will_it_halt(source_code(factorial), -1)
+```
+
+Nossa função está retornando se a função `factorial` para ou executa para sempre nos casos em que é passado `7` e `-1` como valor de `n` respectivamente. Portanto, nesse exemplo `a` recebe o valor `true` e `b` recebe `false`.
+
+Dois detalhes importantes:
+
+1. O primeiro argumento de `will_it_halt` é o código-fonte de **qualquer** função, ela não pode ser escrita para o caso especial em que `factorial` é o primeiro parâmetro;
+2. Nós temos que sempre obter uma resposta de `will_it_halt`, o que significa que ela tem que parar **sempre**.
+
+Agora podemos usar o que já temos para brincar um pouco. Vamos definir a seguinte função:
+```
+halt_if_does_not_halt(code, input) {
+    if( will_it_halt(code, input) ) {
+        while(true) {
+            // Do nothing.
+        }
+    } else {
+        return
+    }
+}
+```
+Vamos analisar esse código por um momento. `halt_if_does_not_halt` simplesmente passa os seus argumentos para `will_it_halt` e se a resposta for `true`, ou seja, a função que tem com código-fonte `code` para com entrada `input`, um `while(true)` é executado, caso contrário a execução simplesmente termina. Outra forma de descrever é: `halt_if_does_not_halt` para se `code` **não** para com entrada `input` e `halt_if_does_not_halt` não para (entra em um loop infinito fazendo nada) caso contrário.
+
+Ok, agora finalmente o momento que todos esperavam. Nada nessa manga, nada outra, a cartola está vazia e:
+```
+will_it_halt(halt_if_does_not_halt, will_it_halt)
+```
+
+[1]: https://www.youtube.com/watch?v=92WHN-pAFCs

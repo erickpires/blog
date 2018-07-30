@@ -3,7 +3,7 @@ languageCode = "pt-br"
 title = "Erick Pires"
 theme = "casper"
 
-BaseUrl= "http://blog.erickpires.com/"
+BaseUrl= "https://blog.erickpires.com/"
 LanguageCode= "pt-BR"
 Title= "Erick Pires"
 paginate = 5
@@ -16,7 +16,7 @@ canonifyurls = true
   cover = "images/cover.jpg"
   author = "Erick Pires"
   authorlocation = "Rio de Janeiro, Brazil"
-  authorwebsite = "http://erickpires.com"
+  authorwebsite = "https://erickpires.com"
   bio= "Estudante de Ciência da Computação"
   logo = "images/logo.png"
   googleAnalyticsUserID = "UA-79559042-1"
