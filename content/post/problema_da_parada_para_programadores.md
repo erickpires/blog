@@ -1,5 +1,5 @@
 +++
-draft = false
+draft = true
 title = "Problema da Parada para programadores"
 image = "images/problema_da_parada_para_programadores/cover.jpg"
 comments = true

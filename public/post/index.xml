@@ -5,22 +5,12 @@
     <link>https://blog.erickpires.com/post/</link>
     <description>Recent content in Posts on Erick Pires</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>pt-BR</language>
+    <language>pt-br</language>
     <copyright>All rights reserved - 2016</copyright>
-    <lastBuildDate>Fri, 31 Mar 2017 11:22:49 -0300</lastBuildDate>
+    <lastBuildDate>Sat, 12 Nov 2016 20:54:18 -0200</lastBuildDate>
     
 	<atom:link href="https://blog.erickpires.com/post/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Problema da Parada para programadores</title>
-      <link>https://blog.erickpires.com/post/problema_da_parada_para_programadores/</link>
-      <pubDate>Fri, 31 Mar 2017 11:22:49 -0300</pubDate>
-      
-      <guid>https://blog.erickpires.com/post/problema_da_parada_para_programadores/</guid>
-      <description>Aviso: Esse post contém pseudo-código, suposições lógicas, paradoxos de auto-referência e magia negra. Se você é alérgico a qualquer um desses itens ou a seus derivados, siga por sua conta em risco. Você foi avisado.
-Todo mundo que já passou algum tempo estudando computação já ouviu falar sobre o tal Problema da Parada (Halting Problem para alguns). Eu lembro claramente do meu professor de Computação I falando sobre o problema, descrevendo o resultado e tal, mas por algum motivo existe uma aura mística em torno no problema e ninguém ousa comentar exatamente o que significa o Problema da Parada ser indecidível.</description>
-    </item>
     
     <item>
       <title>A maldição da abstração</title>
